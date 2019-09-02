@@ -1,6 +1,15 @@
 import React, { Component }  from 'react';
 import './style.css';
-import c from './audio/c.wav'
+import c from './audio/c.m4a';
+import d from './audio/d.m4a';
+import e from './audio/e.m4a';
+import f from './audio/f.m4a';
+import g from './audio/g.m4a';
+import a from './audio/a.m4a';
+import b from './audio/b.m4a';
+import c2 from './audio/c2.m4a';
+import d2 from './audio/d2.m4a';
+
 
 
 class Canvas extends Component {
@@ -10,7 +19,8 @@ class Canvas extends Component {
   	super(props);
   	 this.state = {
       play: false,
-      pause: true
+      pause: true,
+      note: ""
     };
 
 
@@ -653,41 +663,88 @@ class Canvas extends Component {
     		"d2": [-110, -100, 120,80,20]
     	}
 
+    	 var audioc = new Audio(c);
+		 var  audiod = new Audio(d);
+		  var audioe = new Audio(e);
+		  var audiof = new Audio(f);
+		  var audiog = new Audio(g);
+		  var audioa = new Audio(a);
+		  var audiob = new Audio(b);
+		  var audioc2 = new Audio(c2);
+		  var audiod2 = new Audio(d2);
+
+		  var audios = 
+		  {
+		  	"c": audioc,
+		  	"d": audiod,
+		  	"e": audioe,
+		  	"f": audiof,
+		  	"g": audiog,
+		  	"a": audioa,
+		  	"b": audiob,
+		  	"c2": audioc2,
+		  	"d2": audiod2,
+		  }
+
+
 		this.handleclick = (letter) =>
 		{
+        	if(this.state.note)
+            	{
+            		audios[this.state.note].pause();      		
+            	}
+                
 			for (var i = 0; i < vec_cells.length; i++) {
             	var cell_datas = vec_cells[i];
             	for (var j = 0; j < cell_datas.length; j++) {
                 	var cell_data = cell_datas[j];
-                
+
 	                switch(letter)
 	                {
 	                	case "c":
-	                    	change_cell_velocity(cell_data, ...velArr["c"]);
+	                    	change_cell_velocity(cell_data, ...velArr["c"]);                  	
+	                    	audios['c'].play();
+	                    	this.note = "c";                   	
 	                    	break;
 	                    case "d":
 	                    	change_cell_velocity(cell_data, ...velArr["d"]);
+	                    	audios['d'].play();
+	                    	this.note = "d";  
 	                    	break;
 	                    case "e":
 	                    	change_cell_velocity(cell_data, ...velArr["e"]);
+	                    	audios['e'].play();
+	                    	this.note = "e";  
 	                    	break;
 	                    case "f":
 	                    	change_cell_velocity(cell_data, ...velArr["f"]);
+	                    	audios['f'].play();
+	                    	this.note = "f";  
 	                    	break;
 	                    case "g":
 	                    	change_cell_velocity(cell_data, ...velArr["g"]);
+	                    	audios['g'].play();
+	                    	this.note = "g";  
 	                    	break;
 	                    case "a":
 	                    	change_cell_velocity(cell_data, ...velArr["a"]);
+	                    	audios['a'].play();
+	                    	this.note = "a";  
 	                    	break;
 	                    case "b":
 	                    	change_cell_velocity(cell_data, ...velArr["b"]);
+	                    	audios['b'].play();
+	                    	this.note = "b";  
 	                    	break;
 	                     case "c2":
 	                    	change_cell_velocity(cell_data, ...velArr["c2"]);
+	                    	audios['c2'].play();
+	                    	this.note = "c2";  
 	                    	break;
 	                    case "d2":
 	                    	change_cell_velocity(cell_data, ...velArr["d2"]);
+	                    	audios['d2'].play();
+	                    	this.note = "d2";  
 	                    	break;
 	                }
                 update_pressure(cell_data);
@@ -716,57 +773,136 @@ window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequ
 window.Fluid.initialize();
   }
 
-  audio = new Audio("http://streaming.tdiradio.com:8000/house.mp3");
-  audioc = new Audio(c);
+
   //Chloe's version
   //onclick effects for each name letter 
   onClickC()
   {
   	this.handleclick('c');
-  	this.setState({ play: !this.state.play }, () => {
-      this.state.play ? this.audioc.play() : this.audioc.pause();
-    });
+  	// this.setState({ play: !this.state.play }, () => {
+   //    this.state.play ? this.audioc.play() : this.audioc.pause();
+   //  });
+   //  this.audiod.pause();
+  	// this.audioe.pause()
+  	// this.audiof.pause();
+  	// this.audiog.pause();
+  	// this.audioa.pause();
+  	// this.audiob.pause();
+  	// this.audioc2.pause();
+  	// this.audiod2.pause();
     // this.audioc.play();
   }
 
   onClickD()
   {
   	this.handleclick('d');
+  	// this.audioc.pause();
+  	// this.audioe.pause();
+  	// this.audiof.pause();
+  	// this.audiog.pause();
+  	// this.audioa.pause();
+  	// this.audiob.pause();
+  	// this.audioc2.pause();
+  	// this.audiod2.pause();
+  	// this.audiod.play();
   }
 
   onClickE()
   {
   	this.handleclick('e');
+  	// this.audioc.pause();
+  	// this.audiod.pause();
+  	// this.audiof.pause();
+  	// this.audiog.pause();
+  	// this.audioa.pause();
+  	// this.audiob.pause();
+  	// this.audioc2.pause();
+  	// this.audiod2.pause();
+  	// this.audioe.play();
   }
 
   onClickF()
   {
   	this.handleclick('f');
+  	// this.audioc.pause();
+  	// this.audiod.pause();
+  	// this.audioe.pause();
+  	// this.audiog.pause();
+  	// this.audioa.pause();
+  	// this.audiob.pause();
+  	// this.audioc2.pause();
+  	// this.audiod2.pause();
+  	// this.audiof.play();
   }
 
   onClickG()
   {
   	this.handleclick('g');
+  	// this.audioc.pause();
+  	// this.audiod.pause();
+  	// this.audioe.pause();
+  	// this.audiof.pause();
+  	// this.audioa.pause();
+  	// this.audiob.pause();
+  	// this.audioc2.pause();
+  	// this.audiod2.pause();
+  	// this.audiog.play();
   }
 
   onClickA()
   {
   	this.handleclick('a');
+  	// this.audioc.pause();
+  	// this.audiod.pause();
+  	// this.audioe.pause();
+  	// this.audiof.pause();
+  	// this.audiog.pause();
+  	// this.audiob.pause();
+  	// this.audioc2.pause();
+  	// this.audiod2.pause();
+  	// this.audioa.play();
   }
 
   onClickB()
   {
   	this.handleclick('b');
+  	// this.audioc.pause();
+  	// this.audiod.pause();
+  	// this.audioe.pause();
+  	// this.audiof.pause();
+  	// this.audiog.pause();
+  	// this.audioa.pause();
+  	// this.audioc2.pause();
+  	// this.audiod2.pause();
+  	// this.audiob.play();
   }
 
   onClickC2()
   {
   	this.handleclick('c2');
+  	// this.audioc.pause();
+  	// this.audiod.pause();
+  	// this.audioe.pause();
+  	// this.audiof.pause();
+  	// this.audiog.pause();
+  	// this.audioa.pause();
+  	// this.audiob.pause();
+  	// this.audiod2.pause();
+  	// this.audioc2.play();
   }
 
    onClickD2()
   {
   	this.handleclick('d2');
+  	// this.audioc.pause();
+  	// this.audiod.pause();
+  	// this.audioe.pause();
+  	// this.audiof.pause();
+  	// this.audiog.pause();
+  	// this.audioa.pause();
+  	// this.audiob.pause();
+  	// this.audioc2.pause();
+  	// this.audiod2.play();
   }
 
 
