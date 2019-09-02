@@ -1,20 +1,35 @@
 import React, { Component }  from 'react';
+import './style.css';
+import c from './audio/c.wav'
+
 
 class Canvas extends Component {
 
+  constructor(props)
+  {
+  	super(props);
+  	 this.state = {
+      play: false,
+      pause: true
+    };
+
+
+  	this.handleclicka = null;
+  };
 
   componentDidMount() {
-  	const canvas = this.refs.canvas;
-    const ctx = canvas.getContext("2d");
+  	// const canvas = this.refs.canvas;
+   //  const ctx = canvas.getContext("2d");
+   var canvas;
+   var ctx;
 
-var cell_data_for_name;
-var mousexv;
-var mouseyv;
-var penSize;
+	var cell_data_for_name;
+	var mousexv;
+	var mouseyv;
+	var penSize;
 
-(function(w) {
+	var w = window;
 
-    var canvas, ctx;
     
     /* 
     This is an associative array to hold the status of the mouse cursor
@@ -56,7 +71,7 @@ var penSize;
     function init() {
         
         //These lines get the canvas DOM element and canvas context, respectively.
-        canvas = document.getElementById("c");
+        canvas = document.getElementById("canvas");
         ctx = canvas.getContext("2d");
 
         //These two set the width and height of the canvas to the defined values.
@@ -418,7 +433,7 @@ var penSize;
         }
     }
 
-window.addEventListener('load', (event) => {
+	window.addEventListener('load', (event) => {
      for (var i = 0; i < vec_cells.length; i++) {
             var cell_datas = vec_cells[i];
 
@@ -436,232 +451,6 @@ window.addEventListener('load', (event) => {
             }
         }
 });
-
-
-// $(document).on("click","#next",function() {
-//      //Loops through all of the columns
-//         for (var i = 0; i < vec_cells.length; i++) {
-//             var cell_datas = vec_cells[i];
-
-//             //Loops through all of the rows
-//             for (var j = 0; j < cell_datas.length; j++) {
-                
-//                 //References the current cell
-//                 var cell_data = cell_datas[j];
-                
-//                 //If the mouse button is down, updates the cell velocity using the mouse velocity
-//                     change_cell_velocity(cell_data, 60, -100, 140,30,40);
-
-//                 //This updates the pressure values for the cell.
-//                 update_pressure(cell_data);
-//             }
-//         }
-//     });
-
-
-
-
-
-
-
-
-
-//     // Chloe's Version
-    
-//     $(document).on("click","#a",function() {
-//             $('audio#a')[0].play();
-//      //Loops through all of the columns
-//         for (var i = 0; i < vec_cells.length; i++) {
-//             var cell_datas = vec_cells[i];
-
-//             //Loops through all of the rows
-//             for (var j = 0; j < cell_datas.length; j++) {
-                
-//                 //References the current cell
-//                 var cell_data = cell_datas[j];
-                
-//                 //If the mouse button is down, updates the cell velocity using the mouse velocity
-//                     change_cell_velocity(cell_data, 30, -200, 100,10,50);
-
-
-//                 //This updates the pressure values for the cell.
-//                 update_pressure(cell_data);
-//             }
-//         }
-
-//     });
-
- 
-
-// $(document).on("click","#b",function() {
-//             $('audio#b')[0].play();
-//      //Loops through all of the columns
-//         for (var i = 0; i < vec_cells.length; i++) {
-//             var cell_datas = vec_cells[i];
-
-//             //Loops through all of the rows
-//             for (var j = 0; j < cell_datas.length; j++) {
-                
-//                 //References the current cell
-//                 var cell_data = cell_datas[j];
-                
-//                 //If the mouse button is down, updates the cell velocity using the mouse velocity
-//                     change_cell_velocity(cell_data, 60, -100, 140,30,40);
-
-
-//                 //This updates the pressure values for the cell.
-//                 update_pressure(cell_data);
-//             }
-//         }
-
-//     });
-
-// $(document).on("click","#cs",function() {
-//             $('audio#cs')[0].play();
-//      //Loops through all of the columns
-//         for (var i = 0; i < vec_cells.length; i++) {
-//             var cell_datas = vec_cells[i];
-
-//             //Loops through all of the rows
-//             for (var j = 0; j < cell_datas.length; j++) {
-                
-//                 //References the current cell
-//                 var cell_data = cell_datas[j];
-                
-//                 //If the mouse button is down, updates the cell velocity using the mouse velocity
-//                     change_cell_velocity(cell_data, 100, -100, 150,50,60);
-
-
-//                 //This updates the pressure values for the cell.
-//                 update_pressure(cell_data);
-//             }
-//         }
-
-//     });
-
-
-
-
-// $(document).on("click","#d",function() {
-//             $('audio#d')[0].play();
-//      //Loops through all of the columns
-//         for (var i = 0; i < vec_cells.length; i++) {
-//             var cell_datas = vec_cells[i];
-
-//             //Loops through all of the rows
-//             for (var j = 0; j < cell_datas.length; j++) {
-                
-//                 //References the current cell
-//                 var cell_data = cell_datas[j];
-                
-//                 //If the mouse button is down, updates the cell velocity using the mouse velocity
-//                     change_cell_velocity(cell_data, -120, 100, 20,80,20);
-
-
-//                 //This updates the pressure values for the cell.
-//                 update_pressure(cell_data);
-//             }
-//         }
-
-//     });
-
-// $(document).on("click","#e",function() {
-//             $('audio#e')[0].play();
-//      //Loops through all of the columns
-//         for (var i = 0; i < vec_cells.length; i++) {
-//             var cell_datas = vec_cells[i];
-
-//             //Loops through all of the rows
-//             for (var j = 0; j < cell_datas.length; j++) {
-                
-//                 //References the current cell
-//                 var cell_data = cell_datas[j];
-                
-//                 //If the mouse button is down, updates the cell velocity using the mouse velocity
-//                     change_cell_velocity(cell_data, 130, 100, 140,90,30);
-
-
-//                 //This updates the pressure values for the cell.
-//                 update_pressure(cell_data);
-//             }
-//         }
-
-//     });
-
-
-
-
-
-// $(document).on("click","#fs",function() {
-//             $('audio#fs')[0].play();
-//      //Loops through all of the columns
-//         for (var i = 0; i < vec_cells.length; i++) {
-//             var cell_datas = vec_cells[i];
-
-//             //Loops through all of the rows
-//             for (var j = 0; j < cell_datas.length; j++) {
-                
-//                 //References the current cell
-//                 var cell_data = cell_datas[j];
-                
-//                 //If the mouse button is down, updates the cell velocity using the mouse velocity
-//                     change_cell_velocity(cell_data, -50, -100, 50,220,100);
-
-//                 //This updates the pressure values for the cell.
-//                 update_pressure(cell_data);
-//             }
-//         }
-//     });
-
-// $(document).on("click","#g",function() {
-//             $('audio#g')[0].play();
-//      //Loops through all of the columns
-//         for (var i = 0; i < vec_cells.length; i++) {
-//             var cell_datas = vec_cells[i];
-
-//             //Loops through all of the rows
-//             for (var j = 0; j < cell_datas.length; j++) {
-                
-//                 //References the current cell
-//                 var cell_data = cell_datas[j];
-                
-//                 //If the mouse button is down, updates the cell velocity using the mouse velocity
-//                     change_cell_velocity(cell_data, 50, 100, 100, 50, 40);
-
-
-
-//                 //This updates the pressure values for the cell.
-//                 update_pressure(cell_data);
-//             }
-//         }
-
-//     });
-
-
-
-// $(document).on("click","#f",function() {
-//             $('audio#f')[0].play();
-//      //Loops through all of the columns
-//         for (var i = 0; i < vec_cells.length; i++) {
-//             var cell_datas = vec_cells[i];
-
-//             //Loops through all of the rows
-//             for (var j = 0; j < cell_datas.length; j++) {
-                
-//                 //References the current cell
-//                 var cell_data = cell_datas[j];
-                
-//                 //If the mouse button is down, updates the cell velocity using the mouse velocity
-//                     change_cell_velocity(cell_data, -110, -100, 120,80,20);
-
-
-//                 //This updates the pressure values for the cell.
-//                 update_pressure(cell_data);
-//             }
-//         }
-
-//     });
-
 
 
 
@@ -691,22 +480,6 @@ window.addEventListener('load', (event) => {
     }
     
   
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     /*
     This function updates the pressure value for an individual cell using the 
@@ -865,6 +638,63 @@ window.addEventListener('load', (event) => {
         mouse.y = e.touches[0].pageY - rect.top;
     }
 
+
+    //Chloe's version
+    //onclick effects for each name letter 
+    	var velArr = {
+    		"c": [60, -100, 140,30,40],
+    		"d": [30, -200, 100,10,50],
+    		"e": [60, -100, 140,30,40],
+    		"f": [100, -100, 150,50,60],
+    		"g": [-120, 100, 20,80,20],
+    		"a": [130, 100, 140,90,30],
+    		"b": [-50, -100, 50,220,100],
+    		"c2": [50, 100, 100, 50, 40],
+    		"d2": [-110, -100, 120,80,20]
+    	}
+
+		this.handleclick = (letter) =>
+		{
+			for (var i = 0; i < vec_cells.length; i++) {
+            	var cell_datas = vec_cells[i];
+            	for (var j = 0; j < cell_datas.length; j++) {
+                	var cell_data = cell_datas[j];
+                
+	                switch(letter)
+	                {
+	                	case "c":
+	                    	change_cell_velocity(cell_data, ...velArr["c"]);
+	                    	break;
+	                    case "d":
+	                    	change_cell_velocity(cell_data, ...velArr["d"]);
+	                    	break;
+	                    case "e":
+	                    	change_cell_velocity(cell_data, ...velArr["e"]);
+	                    	break;
+	                    case "f":
+	                    	change_cell_velocity(cell_data, ...velArr["f"]);
+	                    	break;
+	                    case "g":
+	                    	change_cell_velocity(cell_data, ...velArr["g"]);
+	                    	break;
+	                    case "a":
+	                    	change_cell_velocity(cell_data, ...velArr["a"]);
+	                    	break;
+	                    case "b":
+	                    	change_cell_velocity(cell_data, ...velArr["b"]);
+	                    	break;
+	                     case "c2":
+	                    	change_cell_velocity(cell_data, ...velArr["c2"]);
+	                    	break;
+	                    case "d2":
+	                    	change_cell_velocity(cell_data, ...velArr["d2"]);
+	                    	break;
+	                }
+                update_pressure(cell_data);
+            }
+        	}		 
+		}
+
   
     /*
     And this line attaches an object called "Fluid" to the global scope. "window" was passed into
@@ -873,8 +703,6 @@ window.addEventListener('load', (event) => {
     w.Fluid = {
         initialize: init
     }
-
-}(window)); //Passes "window" into the self-invoking function.
 
 
 /*
@@ -886,15 +714,89 @@ window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequ
 
 //And this line calls the init() function defined above to start the script.
 window.Fluid.initialize();
-
   }
+
+  audio = new Audio("http://streaming.tdiradio.com:8000/house.mp3");
+  audioc = new Audio(c);
+  //Chloe's version
+  //onclick effects for each name letter 
+  onClickC()
+  {
+  	this.handleclick('c');
+  	this.setState({ play: !this.state.play }, () => {
+      this.state.play ? this.audioc.play() : this.audioc.pause();
+    });
+    // this.audioc.play();
+  }
+
+  onClickD()
+  {
+  	this.handleclick('d');
+  }
+
+  onClickE()
+  {
+  	this.handleclick('e');
+  }
+
+  onClickF()
+  {
+  	this.handleclick('f');
+  }
+
+  onClickG()
+  {
+  	this.handleclick('g');
+  }
+
+  onClickA()
+  {
+  	this.handleclick('a');
+  }
+
+  onClickB()
+  {
+  	this.handleclick('b');
+  }
+
+  onClickC2()
+  {
+  	this.handleclick('c2');
+  }
+
+   onClickD2()
+  {
+  	this.handleclick('d2');
+  }
+
 
 
       render() {
       	return (
- 
+     <div id="body">
+     <div className = "container name ">
+		<div className = "row">
+		<div id = "name" className = "col-12 d-flex justify-content-center uk-animation-toggle">
+			<h1 id="c" onClick={this.onClickC.bind(this)}>C</h1>
+			<h1 id="d" onClick={this.onClickD.bind(this)}>H</h1>
+			<h1 id="e" onClick={this.onClickE.bind(this)}>L</h1>
+			<h1 id="f" onClick={this.onClickF.bind(this)}>O</h1>
+			<h1 id="g" onClick={this.onClickG.bind(this)}>E</h1>
+			<h1 id="a" onClick={this.onClickA.bind(this)}>Z</h1>
+			<h1 id="b" onClick={this.onClickB.bind(this)}>H</h1>
+			<h1 id="c2" onClick={this.onClickC2.bind(this)}>O</h1>
+			<h1 id="d2" onClick={this.onClickD2.bind(this)}>U</h1>
+		</div>
+	</div>
+	<div className = "row mt-1">
+		<div className = "col-12 d-flex justify-content-center">
+			<h3>FULL-STACK WEB DEVELOPER</h3>
+		</div>
+	</div>
+</div>
 
-      		<canvas ref="canvas" width={500} height={500} id="c"></canvas>
+      		<canvas ref="canvas" width={500} height={500} id="canvas"></canvas>
+      		</div>
       	);
 
 	}
