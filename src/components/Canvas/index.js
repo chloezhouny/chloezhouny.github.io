@@ -20,7 +20,7 @@ class Canvas extends Component {
   	 this.state = {
       play: false,
       pause: true,
-      note: ""
+      note: "",
     };
 
 
@@ -912,27 +912,28 @@ window.Fluid.initialize();
      <div id="body">
      <div className = "container name ">
 		<div className = "row">
-		<div id = "name" className = "col-12 d-flex justify-content-center uk-animation-toggle">
-			<h1 id="c" onClick={this.onClickC.bind(this)}>C</h1>
-			<h1 id="d" onClick={this.onClickD.bind(this)}>H</h1>
-			<h1 id="e" onClick={this.onClickE.bind(this)}>L</h1>
-			<h1 id="f" onClick={this.onClickF.bind(this)}>O</h1>
-			<h1 id="g" onClick={this.onClickG.bind(this)}>E</h1>
-			<h1 id="a" onClick={this.onClickA.bind(this)}>Z</h1>
-			<h1 id="b" onClick={this.onClickB.bind(this)}>H</h1>
-			<h1 id="c2" onClick={this.onClickC2.bind(this)}>O</h1>
-			<h1 id="d2" onClick={this.onClickD2.bind(this)}>U</h1>
+			<div id = "name" className = "col-12 d-flex justify-content-center uk-animation-toggle">
+				<h1 id="c" onClick={this.onClickC.bind(this)}>C</h1>
+				<h1 id="d" onClick={this.onClickD.bind(this)}>H</h1>
+				<h1 id="e" onClick={this.onClickE.bind(this)}>L</h1>
+				<h1 id="f" onClick={this.onClickF.bind(this)}>O</h1>
+				<h1 id="g" onClick={this.onClickG.bind(this)}>E</h1>
+				<h1 id="a" onClick={this.onClickA.bind(this)}>Z</h1>
+				<h1 id="b" onClick={this.onClickB.bind(this)}>H</h1>
+				<h1 id="c2" onClick={this.onClickC2.bind(this)}>O</h1>
+				<h1 id="d2" onClick={this.onClickD2.bind(this)}>U</h1>
+			</div>
 		</div>
-	</div>
-	<div className = "row mt-1">
-		<div className = "col-12 d-flex justify-content-center">
-			<h3>FULL-STACK WEB DEVELOPER</h3>
+		<div className = "row mt-1">
+			<div className = "col-12 d-flex justify-content-center">
+				<h3>FULL-STACK WEB DEVELOPER</h3>
+			</div>
 		</div>
-	</div>
-</div>
-
-      		<canvas ref="canvas" width={500} height={500} id="canvas"></canvas>
-      		</div>
+		</div>
+      <canvas ref="canvas" width={500} height={500} id="canvas"></canvas>
+     
+      </div>
+      
       	);
 
 	}

@@ -1,0 +1,29 @@
+#chloe
+{
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 8%;
+	background-size: cover;
+}
+
+img
+{
+	width: 100%;
+}
+
+#skill li
+{
+	background-color: #00FFFF;
+	margin-bottom: 3.5%;
+	color: white;
+	font-weight: bold;
+	padding: 1%;
+}
+
+#skill ul
+{
+	list-style-type: none;
+}
