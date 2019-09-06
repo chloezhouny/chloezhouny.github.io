@@ -67,8 +67,8 @@ const Background = styled.div({
   backgroundRepeat: "no-repeat",
   color: "#FFF",
   position: "relative",
-  width: "500px",
-  height: "350px",
+  width: "100%",
+  height:"300px",
   cursor: "pointer",
   backgroundImage: `url("https://images.unsplash.com/photo-1566568860449-f30e620d4d58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80")`,
   [`:hover ${DisplayOver}`]: {
@@ -123,7 +123,7 @@ render ()
 {
 	const { dotPosition } = this.state;
 	return (
-	<div>
+	<div className = "h-100">
  <Background>
   <DisplayOver>
     <Hover>

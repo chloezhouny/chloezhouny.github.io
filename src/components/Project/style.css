@@ -3,3 +3,13 @@
 	max-height: 100vh;
 	min-height: 100vh;
 }
+
+.cardbody
+{
+	padding: 0;
+}
+
+#projectContent
+{
+	width: 84%;
+}
