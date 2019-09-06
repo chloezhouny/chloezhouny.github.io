@@ -22,7 +22,7 @@ constructor(props)
     const el = this.refs.nav;
     console.log(el);
     this.setState({top: el.offsetTop, height: el.offsetHeight});
-        window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll);
   }
 
   componentDidUpdate() {

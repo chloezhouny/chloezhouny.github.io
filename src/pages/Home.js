@@ -2,6 +2,7 @@ import React, { Component }from 'react';
 import Canvas from '../components/Canvas';
 import Nav from '../components/Nav';
 import About from '../components/About';
+import Project from '../components/Project';
 import './Home.css';
 
 
@@ -45,8 +46,10 @@ class Home extends Component {
       	return (
       		<div>
 	      		<Canvas/>
-	      		 <Nav id="nav"/>
+	      		<Nav id="nav"/>
 	      		<About />
+	      		<Project />
+
       		</div>
 
       	);
