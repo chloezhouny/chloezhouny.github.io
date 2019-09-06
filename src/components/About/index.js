@@ -91,7 +91,8 @@ class About extends Component {
 
 
       render() {
-      	return (     
+      	return (
+        <div id="aboutBody"> 
       	<div className="container">
       		<div className = "row">
       			<div className = "col-12 d-flex justify-content-center">
@@ -157,6 +158,7 @@ class About extends Component {
       </div>
       	</div>
       	</div>
+        </div>
 
 
 

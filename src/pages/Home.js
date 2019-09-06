@@ -3,6 +3,7 @@ import Canvas from '../components/Canvas';
 import Nav from '../components/Nav';
 import About from '../components/About';
 import Project from '../components/Project';
+import Contact from '../components/Contact';
 import './Home.css';
 
 
@@ -49,7 +50,7 @@ class Home extends Component {
 	      		<Nav id="nav"/>
 	      		<About />
 	      		<Project />
-
+	      		<Contact />
       		</div>
 
       	);

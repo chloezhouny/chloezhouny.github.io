@@ -1,0 +1,64 @@
+.ant-modal-footer
+{
+	opacity: 0;
+	height: 0;
+}
+
+.ant-modal-close-x
+{
+	bottom: 2.5%;
+	right: 0;
+	position: absolute;
+}
+
+.ant-modal-close-x i
+{
+	width: 40%;
+	margin-right: 40%;
+}
+
+
+.ant-modal-close-x i svg
+{
+	width: 100%;
+	height: auto;
+}
+
+
+.ant-modal-body
+{
+	padding: 0;
+}
+
+.ant-carousel
+{
+	height: 30%;
+}
+
+.ant-modal-close
+{
+	height: 100%;
+}
+
+.ant-modal
+{
+	top: 0;
+	width: 700px !important;
+}
+
+.ant-carousel .slick-dots-bottom
+{
+	bottom: 30px;
+}
+
+h3 img
+{
+	height: 430px;
+}
+
+.projectContent
+{
+	padding-left: 4%;
+	padding-right: 4%;
+	padding-bottom: 8%;
+}

@@ -1,11 +1,8 @@
 import React, { Component }from 'react';
 import './style.css';
-import ProjectCard from '../ProjectCard';
 
 
-
-
-class Project extends Component {
+class Contact extends Component {
 
  state = {
   
@@ -21,16 +18,15 @@ class Project extends Component {
 
       render() {
         return (
-        <div id="projectBody"> 
+        <div id="contactBody"> 
         <div className="container">
           <div className = "row">
             <div className = "col-12 d-flex justify-content-center">
-              <h1>PROJECT</h1>
+              <h1>CONTACT</h1>
             </div>
           </div>  
           <div className = "row">
             <div className = "col-6">
-            <ProjectCard />
              
             </div>
           </div>
@@ -46,4 +42,4 @@ class Project extends Component {
 
 
 
-export default Project;
+export default Contact;
