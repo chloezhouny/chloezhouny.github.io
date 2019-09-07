@@ -19,18 +19,43 @@ class Contact extends Component {
       render() {
         return (
         <div id="contactBody"> 
-        <div className="container">
-          <div className = "row">
-            <div className = "col-12 d-flex justify-content-center">
-              <h1>CONTACT</h1>
+          <div className="container w-75" id = "contactContent">
+            <div className = "row">
+              <div className = "col-12 contactLine">
+                <p>For any proposal</p>         
+              </div>
+            </div> 
+            <div className = "row">
+              <div className = "col-12 contactLine">
+                <p>of collaboration,</p>         
+              </div>
+            </div> 
+             <div className = "row">
+              <div className = "col-12 contactLine" >
+                <p>feel free to contact me.</p>               
+              </div>
+            </div>   
+            <div className = "row">
+              <div className = "col-8 email">
+                  <p> chloezhouny@gmail.com </p>
+              </div>
             </div>
-          </div>  
-          <div className = "row">
-            <div className = "col-6">
-             
+            <div className = "row contactLink">
+              <div className = "col-12">
+                  <div className = "row d-flex justify-content-center">
+                      <div className = "col-1">
+                        <p> Github. </p>
+                      </div>
+                      <div className = "col-1">
+                        <p> LinkedIn. </p>
+                      </div>
+                      <div className = "col-1">
+                        <p> Facebook. </p>
+                      </div>
+                  </div>
+              </div>
             </div>
           </div>
-        </div>
         </div>
 
 

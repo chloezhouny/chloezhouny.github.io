@@ -57,10 +57,8 @@ class Project extends Component {
                   </div>           
                 </TabPane>
                 <TabPane tab="NODE.JS" key="2">
-                   <ProjectCard />
                 </TabPane>
                 <TabPane tab="LITTLE GAMES" key="3">
-                   <ProjectCard />
                 </TabPane>
             </Tabs>
            </div>

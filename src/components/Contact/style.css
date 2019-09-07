@@ -1,5 +1,133 @@
 #contactBody
 {
-	max-height: 100vh;
+	background-color: black;
 	min-height: 100vh;
+	background-image: url("https://images.unsplash.com/photo-1527607976958-7cbb4a6d0131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2743&q=80");
+	background-size: cover;
 }
+
+#contactContent
+{
+	padding-top: 7.5%;
+}
+
+.contactLine p
+{
+	color: white;
+	font-size: 4.4vw;
+	font-family: "SolanelThin";
+	font-weight: 100 !important;
+	margin-bottom: 0;
+	
+}
+
+.email
+{
+	padding-top: 7%;
+}
+.email p
+{
+	color: white;
+	font-size: 1.4vw;
+	font-family: 'Gayathri', sans-serif;
+
+}
+
+.w-75
+{
+	width: 66% !important;
+}
+
+.contactLink
+{
+	margin-top: 15%;
+}
+
+.contactLink p
+{
+	color: white;
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	
+}
+
+.contactLink p,
+.contactLink p:hover,
+.contactLink p:focus,
+.contactLink p:active {
+  text-decoration: none;
+}
+
+.contactLink p::before
+{
+  content: "";
+  position: absolute;
+  top: 65%;
+  height: 1px;
+  width: 0%;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.contactLink p::after {
+  content: "";
+  position: absolute;
+  top: 65%;
+  height: 1px;
+  width: 0%;
+  left: 5%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.contactLink:hover p::after {
+  width: 90%;
+  transition: 0.4s ease all;
+  transition-delay: 0.3s
+}
+
+.contactLink:hover p::before {
+  width: 90%;
+  transform: translateX(100%);
+  background-color: rgba(255, 255, 255, 0);
+  transition: 0.5s ease-out;
+
+}
+
+
+/*@keyframes effect {
+  from {
+  	content: "";
+  position: absolute;
+  top: 65%;
+  height: 1px;
+  width: 0%;
+  background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  to {
+  content: "";
+  position: absolute;
+  top: 65%;
+  height: 1px;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.contactLink p
+{
+}
+
+
+
+
+.contactLink:hover p
+{
+  animation-duration: 0.1s;
+  animation-name: effect;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+*/
+
+
