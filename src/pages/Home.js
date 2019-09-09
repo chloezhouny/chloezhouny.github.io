@@ -46,8 +46,8 @@ class Home extends Component {
       render() {
       	return (
       		<div>
-	      		<Canvas/>
-	      		<Nav id="nav"/>
+      			<Nav id="nav"/>
+	      		<Canvas/>	      		
 	      		<About />
 	      		<Project />
 	      		<Contact />

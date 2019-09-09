@@ -1,12 +1,14 @@
 
 #body
 {
-	background-color: black;
 	color: white;
-	max-height: 100vh;
+	height: calc(100vh - 80px);
+	position: relative;
 	cursor: grab;
-	min-height: 100vh;
+	overflow: hidden;
+	background-color: black;
 }
+
 
 
 canvas{
@@ -17,7 +19,8 @@ canvas{
     left: 0;
     margin: auto;
     border: 2px solid white;
-    z-index: 1;
+    z-index: 0;
+
 }
 
 
@@ -30,6 +33,7 @@ canvas{
 	background-color: Transparent;
 	border: none;
 	z-index: 2;
+
 }
 
 .name h1, .name h3
@@ -38,6 +42,8 @@ canvas{
 	letter-spacing: 1em;
 	background-color: Transparent;
 }
+
+
 
 
 #c, #d, #e, #f, #g, #a, #b, #c2, #d2

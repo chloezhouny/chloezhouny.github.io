@@ -931,7 +931,6 @@ window.Fluid.initialize();
 		</div>
 		</div>
       <canvas ref="canvas" width={500} height={500} id="canvas"></canvas>
-     
       </div>
       
       	);

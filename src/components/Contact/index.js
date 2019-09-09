@@ -43,13 +43,13 @@ class Contact extends Component {
             <div className = "row contactLink">
               <div className = "col-12">
                   <div className = "row d-flex justify-content-center">
-                      <div className = "col-1">
+                      <div className = "col-1 linkwrapper">
                         <p> Github. </p>
                       </div>
-                      <div className = "col-1">
+                      <div className = "col-1 linkwrapper">
                         <p> LinkedIn. </p>
                       </div>
-                      <div className = "col-1">
+                      <div className = "col-1 linkwrapper">
                         <p> Facebook. </p>
                       </div>
                   </div>
