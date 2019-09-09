@@ -43,6 +43,7 @@
 	margin: 0 auto;
 	overflow: hidden;
 	margin-top: 8%;
+	margin-left: 0;
 	background-image: url("https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
 }
 
@@ -58,7 +59,7 @@ img
 	font-size: 0.9vw;
 	opacity: 0.95;
 	padding-top:6%;
-	padding-left: 12%;
+	
 } 
 
 #paragraph p
@@ -79,6 +80,11 @@ img
 .skillContent p:focus,
 .skillContent p:active {
   text-decoration: none;
+}
+
+.skillContent p:hover
+{
+	opacity: 1;
 }
 
 
@@ -131,6 +137,7 @@ img
 	transition: 0.5s ease all .3s;
 }
 
+
 .grayli
 {
 	opacity: 0.5;
@@ -144,4 +151,22 @@ img
 #skill ul
 {
 	list-style-type: none;
+}
+
+
+
+
+
+.path {
+  stroke-dasharray: 2000;
+  animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 2000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }

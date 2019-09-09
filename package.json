@@ -6,8 +6,10 @@
     "@emotion/core": "^10.0.17",
     "@emotion/styled": "^10.0.17",
     "antd": "^3.23.1",
+    "prop-types": "^15.7.2",
     "rc-queue-anim": "^1.8.2",
     "rc-texty": "^0.2.0",
+    "rc-tween-one": "^2.6.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1",
@@ -33,5 +35,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chloezhouny/chloezhouny.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chloezhouny/chloezhouny.github.io/issues"
+  },
+  "homepage": "https://github.com/chloezhouny/chloezhouny.github.io#readme"
 }
