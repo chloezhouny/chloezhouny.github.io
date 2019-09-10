@@ -2,6 +2,7 @@ import React, { Component }  from 'react';
 import styled from "@emotion/styled/macro";
 import { Modal, Button } from 'antd';
 import { Carousel, Radio } from 'antd';
+import { Icon } from 'antd';
 import './style.css';
 
 
@@ -96,12 +97,19 @@ constructor(props)
 
           this.state = {
          	visible: false,
-         	dotPosition: 'bottom'
+         	dotPosition: 'bottom',
+          title: props.project.title,
+          description: props.project.description,
+          img: props.project.img,
+          detail: props.project.detail,
+          link: props.project.link
           };
 
       }
 
   componentDidMount() {
+
+    console.log(this.state.img);
   
   }
 
@@ -127,9 +135,9 @@ render ()
  <Background>
   <DisplayOver>
     <Hover>
-      <SubTitle>You could vacation here!</SubTitle>
+      <SubTitle>{this.state.title}</SubTitle>
       <Paragraph>
-        More description about this really cool random desert photo from unsplash!
+        {this.state.description}
       </Paragraph>
       <CTA onClick={this.showModal}>View More +</CTA>
     </Hover>
@@ -143,25 +151,26 @@ render ()
         >
         	<Carousel autoplay dotPosition={dotPosition}>
 		    <div>
-		      <h3><img src= "https://images.unsplash.com/photo-1562217180-021f74991332?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"/></h3>
+		      <h3><img src= {this.state.img[0]}/></h3>
 		    </div>
 		    <div>
-		      <h3><img src="https://images.unsplash.com/photo-1566640269407-436c75fc9495?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"/></h3>
+		      <h3><img src={this.state.img[1]}/></h3>
 		    </div>
 		    <div>
-		      <h3><img src="https://images.unsplash.com/photo-1566640241039-2443899336c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"/></h3>
+		      <h3><img src={this.state.img[2]}/></h3>
 		    </div>
 		    <div>
-		      <h3><img src="https://images.unsplash.com/photo-1566640240730-eee83b88f7db?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"/></h3>
+		      <h3><img src={this.state.img[3]}/></h3>
 		    </div>
   			</Carousel>
   		  <div className = "projectContent">
-  		  	<h3>Title</h3>
+  		  	<h3>{this.state.title}</h3>
   		  	<hr></hr>
-	         <p>Bla bla ...</p>
-	         <p>Bla bla ...</p>
-	         <p>Bla bla ...</p>
-          </div>
+	         <p>{this.state.detail}</p>
+          <br></br>
+          <a href = {this.state.link}><Icon type="link" />     See the project</a>
+        </div>
+
         </Modal>
 </div>
 

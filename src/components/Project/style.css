@@ -3,6 +3,41 @@
 	max-height: 100vh;
 	min-height: 100vh;
 	clear: both;
+	background-color: rgb(17, 17, 17);
+	/*background-image: url("https://images.unsplash.com/photo-1545486332-9e0999c535b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80");*/
+}
+
+h1
+{
+	color: white;
+}
+
+.ant-tabs-bar
+{
+	border-bottom: none;
+}
+
+.ant-tabs-tab
+{
+	color: white;
+	padding-bottom: 0;
+}
+
+.ant-tabs-nav .ant-tabs-tab:hover
+{
+	color: rgb(255,255,255,0.7);
+}
+
+.ant-tabs-nav .ant-tabs-tab-active
+{
+	color: white;
+}
+
+.ant-tabs-ink-bar
+{
+	background-color: white;
+	height: 1px;
+	margin-bottom: 1%;
 }
 
 .cardbody
@@ -12,5 +47,28 @@
 
 #projectContent
 {
+	margin-top: 10%;
 	width: 84%;
+}
+
+.card
+{
+	background-color: transparent;
+}
+.left .card
+{
+	margin-top: 20%;
+
+}
+
+
+
+.right .card
+{
+	margin-top: 20%;
+}
+
+.right .card div
+{
+	text-align: right;
 }
