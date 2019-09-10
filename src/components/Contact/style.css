@@ -1,7 +1,9 @@
 #contactBody
 {
+	clear: both;
 	background-color: black;
 	min-height: 100vh;
+	max-height: 100vh;
 	background-image: url("https://images.unsplash.com/photo-1527607976958-7cbb4a6d0131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2743&q=80");
 	background-size: cover;
 }

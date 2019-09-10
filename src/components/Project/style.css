@@ -1,7 +1,6 @@
 #projectBody
 {
-	max-height: 100vh;
-	min-height: 100vh;
+
 	clear: both;
 	background-color: rgb(17, 17, 17);
 	/*background-image: url("https://images.unsplash.com/photo-1545486332-9e0999c535b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80");*/
@@ -49,11 +48,29 @@ h1
 {
 	margin-top: 10%;
 	width: 84%;
+	height: 100%;
+}
+
+.col-8 {
+    flex: 0 0 64%;
+    max-width: 64%;
+}
+
+.offset-2 {
+    margin-left: 16%;
 }
 
 .card
 {
 	background-color: transparent;
+
+}
+
+.card h2
+{
+	color: white;
+	text-align: center;
+	margin-top: 5%;
 }
 .left .card
 {

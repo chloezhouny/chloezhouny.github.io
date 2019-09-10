@@ -60,7 +60,7 @@ const CTA = styled.a({
   textAlign: "center",
   color: "black",
 
-});
+})
 
 
 const Background = styled.div({
@@ -69,9 +69,9 @@ const Background = styled.div({
   color: "#FFF",
   position: "relative",
   width: "100%",
-  height:"300px",
+  height:"500px",
   cursor: "pointer",
-  backgroundImage: `url("https://images.unsplash.com/photo-1566568860449-f30e620d4d58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80")`,
+  backgroundImage: "${props => props.myImage}",
   [`:hover ${DisplayOver}`]: {
     backgroundColor: "rgb(250,250,250)",
   },
@@ -99,6 +99,7 @@ constructor(props)
          	visible: false,
          	dotPosition: 'bottom',
           title: props.project.title,
+          cover: props.project.cover,
           description: props.project.description,
           img: props.project.img,
           detail: props.project.detail,
@@ -108,8 +109,8 @@ constructor(props)
       }
 
   componentDidMount() {
-
     console.log(this.state.img);
+    console.log(this.state.cover);
   
   }
 
@@ -132,7 +133,7 @@ render ()
 	const { dotPosition } = this.state;
 	return (
 	<div className = "h-100">
- <Background>
+ <Background style= {{backgroundImage: `url(${this.state.cover})`}}>
   <DisplayOver>
     <Hover>
       <SubTitle>{this.state.title}</SubTitle>

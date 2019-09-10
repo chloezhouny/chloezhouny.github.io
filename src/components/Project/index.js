@@ -3,7 +3,7 @@ import './style.css';
 import ProjectCard from '../ProjectCard';
 import { Tabs } from 'antd';
 
-
+import venvic from './venvi.png';
 import venvi1 from './venvi1.png';
 import venvi2 from './venvi2.png';
 import venvi3 from './venvi3.png';
@@ -23,6 +23,7 @@ class Project extends Component {
   componentDidMount() {
 
 
+
   }
 
 
@@ -30,16 +31,18 @@ class Project extends Component {
 
         var venvi = {
           bg: "https://images.unsplash.com/photo-1508807526345-15e9b5f4eaff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1598&q=80",
-          title: "VENVI",
+          title: "Venvi",
+          cover: venvic,
           description: "a web app where users review specific models of cars, buy and sell cars and test drive in 3D",
           img: [venvi1, venvi2, venvi3, venvi4],
           detail: "VENVI is a web app where users can find and submit user reviews for specific models of cars, buy and sell cars and test drive in 3D. This app takes a different approach from the commonly seen critical reviews from cars, user reviews are also an important factor in influencing purchasing decisions and we provide that.",
           link: "https://phillipchang.github.io/venvi-fe/"
         }
 
+
         return (
         <div id="projectBody" className = "d-flex justify-content-center"> 
-        <div className="container-fluid h-100" id="projectContent">
+        <div className="container-fluid" id="projectContent">
           <div className = "row h-25">
             <div className = "col-12 d-flex justify-content-start">
               <h1>PROJECTS</h1>
@@ -54,40 +57,95 @@ class Project extends Component {
                     
                     <div className = "col-6 cardbody left">
                       <div className = "row card">
-                        <div className = "col-10">
-                            <ProjectCard project={venvi} />
-                        </div>
+                          <div className = "col-12">
+                            <div className = "row">
+                              <div className = "offset-2 col-8">
+                                  <ProjectCard project={venvi} />
+                              </div>
+                            </div>
+                            <div className = "row">
+                            <div className = "offset-2 col-8">
+                              <h2> {venvi.title} </h2>
+                            </div>
+                            </div>
+                          </div>
+
                       </div>
                       <div className = "row card">
-                        <div className = "col-10">
-                            <ProjectCard project={venvi} />
-                        </div>
+                        <div className = "col-12">
+                            <div className = "row">
+                              <div className = "offset-2 col-8">
+                                  <ProjectCard project={venvi} />
+                              </div>
+                            </div>
+                            <div className = "row">
+                            <div className = "offset-2 col-8">
+                              <h2> {venvi.title} </h2>
+                            </div>
+                            </div>
+                          </div>
                       </div>
                       <div className = "row card">
-                        <div className = "col-10">
-                            <ProjectCard project={venvi} />
-                        </div>
+                       <div className = "col-12">
+                            <div className = "row">
+                              <div className = "offset-2 col-8">
+                                  <ProjectCard project={venvi} />
+                              </div>
+                            </div>
+                            <div className = "row">
+                            <div className = "offset-2 col-8">
+                              <h2> {venvi.title} </h2>
+                            </div>
+                            </div>
+                          </div>
                       </div>   
                   </div>
 
                   <div className = "col-6 cardbody right">
 
                       <div className = "row card ">
-                        <div className = "col-10 offset-2">
-                            <ProjectCard project={venvi} />
-                        </div>
+                       <div className = "col-12">
+                            <div className = "row">
+                              <div className = "offset-2 col-8">
+                                  <ProjectCard project={venvi} />
+                              </div>
+                            </div>
+                            <div className = "row">
+                            <div className = "offset-2 col-8">
+                              <h2> {venvi.title} </h2>
+                            </div>
+                            </div>
+                          </div>
                       </div>
 
                       <div className = "row card">
-                        <div className = "col-10 offset-2">
-                            <ProjectCard project={venvi} />
-                        </div>
+                        <div className = "col-12">
+                            <div className = "row">
+                              <div className = "offset-2 col-8">
+                                  <ProjectCard project={venvi} />
+                              </div>
+                            </div>
+                            <div className = "row">
+                            <div className = "offset-2 col-8">
+                              <h2> {venvi.title} </h2>
+                            </div>
+                            </div>
+                          </div>
                       </div>
 
                       <div className = "row card">
-                        <div className = "col-10 offset-2">
-                            <ProjectCard project={venvi} />
-                        </div>
+                        <div className = "col-12">
+                            <div className = "row">
+                              <div className = "offset-2 col-8">
+                                  <ProjectCard project={venvi} />
+                              </div>
+                            </div>
+                            <div className = "row">
+                            <div className = "offset-2 col-8">
+                              <h2> {venvi.title} </h2>
+                            </div>
+                            </div>
+                          </div>
                       </div> 
 
                     </div>
@@ -98,26 +156,80 @@ class Project extends Component {
                     
                     <div className = "col-6 cardbody left">
                       <div className = "row card">
-                        <div className = "col-10">
-                            <ProjectCard project={venvi} />
-                        </div>
+                         <div className = "col-12">
+                            <div className = "row">
+                              <div className = "offset-2 col-8">
+                                  <ProjectCard project={venvi} />
+                              </div>
+                            </div>
+                            <div className = "row">
+                            <div className = "offset-2 col-8">
+                              <h2> {venvi.title} </h2>
+                            </div>
+                            </div>
+                          </div>
                       </div>
                       <div className = "row card">
-                        <div className = "col-10">
-                            <ProjectCard project={venvi} />
+                        <div className = "col-12">
+                          <div className = "row">
+                            <div className = "col-12">
+                            <div className = "row">
+                              <div className = "offset-2 col-8">
+                                  <ProjectCard project={venvi} />
+                              </div>
+                            </div>
+                            <div className = "row">
+                            <div className = "offset-2 col-8">
+                              <h2> {venvi.title} </h2>
+                            </div>
+                            </div>
+                          </div>
+                          </div>
+                          <div className = "row">
+                             <div className = "col-12">
+                            <div className = "row">
+                              <div className = "offset-2 col-8">
+                                  <ProjectCard project={venvi} />
+                              </div>
+                            </div>
+                            <div className = "row">
+                            <div className = "offset-2 col-8">
+                              <h2> {venvi.title} </h2>
+                            </div>
+                            </div>
+                          </div>
+                          </div>
                         </div>
                       </div>  
                   </div>
                   <div className = "col-6 cardbody left">
                       <div className = "row card">
-                        <div className = "col-10">
-                            <ProjectCard project={venvi} />
-                        </div>
+                        <div className = "col-12">
+                            <div className = "row">
+                              <div className = "offset-2 col-8">
+                                  <ProjectCard project={venvi} />
+                              </div>
+                            </div>
+                            <div className = "row">
+                            <div className = "offset-2 col-8">
+                              <h2> {venvi.title} </h2>
+                            </div>
+                            </div>
+                          </div>
                       </div>
                       <div className = "row card">
-                        <div className = "col-10">
-                            <ProjectCard project={venvi} />
-                        </div>
+                         <div className = "col-12">
+                            <div className = "row">
+                              <div className = "offset-2 col-8">
+                                  <ProjectCard project={venvi} />
+                              </div>
+                            </div>
+                            <div className = "row">
+                            <div className = "offset-2 col-8">
+                              <h2> {venvi.title} </h2>
+                            </div>
+                            </div>
+                          </div>
                       </div>  
                   </div>
                 </div>
@@ -127,26 +239,62 @@ class Project extends Component {
                     
                     <div className = "col-6 cardbody left">
                       <div className = "row card">
-                        <div className = "col-10">
-                            <ProjectCard project={venvi} />
-                        </div>
+                         <div className = "col-12">
+                            <div className = "row">
+                              <div className = "offset-2 col-8">
+                                  <ProjectCard project={venvi} />
+                              </div>
+                            </div>
+                            <div className = "row">
+                            <div className = "offset-2 col-8">
+                              <h2> {venvi.title} </h2>
+                            </div>
+                            </div>
+                          </div>
                       </div>
                       <div className = "row card">
-                        <div className = "col-10">
-                            <ProjectCard project={venvi} />
-                        </div>
+                        <div className = "col-12">
+                            <div className = "row">
+                              <div className = "offset-2 col-8">
+                                  <ProjectCard project={venvi} />
+                              </div>
+                            </div>
+                            <div className = "row">
+                            <div className = "offset-2 col-8">
+                              <h2> {venvi.title} </h2>
+                            </div>
+                            </div>
+                          </div>
                       </div>  
                   </div>
                   <div className = "col-6 cardbody left">
                       <div className = "row card">
-                        <div className = "col-10">
-                            <ProjectCard project={venvi} />
-                        </div>
+                         <div className = "col-12">
+                            <div className = "row">
+                              <div className = "offset-2 col-8">
+                                  <ProjectCard project={venvi} />
+                              </div>
+                            </div>
+                            <div className = "row">
+                            <div className = "offset-2 col-8">
+                              <h2> {venvi.title} </h2>
+                            </div>
+                            </div>
+                          </div>
                       </div>
                       <div className = "row card">
-                        <div className = "col-10">
-                            <ProjectCard project={venvi} />
-                        </div>
+                         <div className = "col-12">
+                            <div className = "row">
+                              <div className = "offset-2 col-8">
+                                  <ProjectCard project={venvi} />
+                              </div>
+                            </div>
+                            <div className = "row">
+                            <div className = "offset-2 col-8">
+                              <h2> {venvi.title} </h2>
+                            </div>
+                            </div>
+                          </div>
                       </div>  
                   </div>
                 </div>
