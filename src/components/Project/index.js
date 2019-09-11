@@ -3,50 +3,50 @@ import './style.css';
 import ProjectCard from '../ProjectCard';
 import { Tabs } from 'antd';
 
-import venvic from './venvi.png';
-import venvi1 from './venvi1.png';
-import venvi2 from './venvi2.png';
-import venvi3 from './venvi3.png';
-import venvi4 from './venvi4.png';
+import venvic from './images/venvi.png';
+import venvi1 from './images/venvi1.png';
+import venvi2 from './images/venvi2.png';
+import venvi3 from './images/venvi3.png';
+import venvi4 from './images/venvi4.png';
 
-import gymate1 from './gymate1.png';
-import gymate2 from './gymate2.png';
-import gymate3 from './gymate3.png';
+import gymate1 from './images/gymate1.png';
+import gymate2 from './images/gymate2.png';
+import gymate3 from './images/gymate3.png';
 
-import pinme1 from './pinme1.png';
-import pinme2 from './pinme2.png';
-
-
-import incrowd1 from './incrowd1.png';
-import incrowd2 from './incrowd2.png';
-import incrowd3 from './incrowd3.png';
-import incrowd4 from './incrowd4.png';
+import pinme1 from './images/pinme1.png';
+import pinme2 from './images/pinme2.png';
 
 
-import rps1 from './rps1.png';
-import rps2 from './rps2.png';
-import rps3 from './rps3.png';
-import rps4 from './rps4.png';
-
-import clicky1 from './clicky1.png';
-import clicky2 from './clicky2.png';
-import clicky3 from './clicky3.png';
-
-import cooking1 from './cooking1.png';
-import cooking2 from './cooking2.png';
-import cooking3 from './cooking3.png';
-
-import liri from './liri.gif';
-
-import dotac from './dota.gif';
-import dota1 from './dota1.gif';
+import incrowd1 from './images/incrowd1.png';
+import incrowd2 from './images/incrowd2.png';
+import incrowd3 from './images/incrowd3.png';
+import incrowd4 from './images/incrowd4.png';
 
 
-import hp from './hp.jpg';
-import hp1 from './hp.gif';
+import rps1 from './images/rps1.png';
+import rps2 from './images/rps2.png';
+import rps3 from './images/rps3.png';
+import rps4 from './images/rps4.png';
 
-import alladinc from './aladdin.jpg';
-import alladin1 from './alladin1.gif';
+import clicky1 from './images/clicky1.png';
+import clicky2 from './images/clicky2.png';
+import clicky3 from './images/clicky3.png';
+
+import cooking1 from './images/cooking1.png';
+import cooking2 from './images/cooking2.png';
+import cooking3 from './images/cooking3.png';
+
+import liri from './images/liri.gif';
+
+import dotac from './images/dota.gif';
+import dota1 from './images/dota1.gif';
+
+
+import hp from './images/hp.jpg';
+import hp1 from './images/hp.gif';
+
+import alladinc from './images/aladdin.jpg';
+import alladin1 from './images/alladin1.gif';
 
 
 
