@@ -28,6 +28,9 @@ import './style.css';
 const Hover = styled.div({
   opacity: 0,
   transition: "opacity 350ms ease",
+  position: "flex",
+  justifyContent: "center"
+
 });
 
 const SubTitle = styled.h4({
@@ -35,8 +38,8 @@ const SubTitle = styled.h4({
   top: "50px",
   left: "0",
   right: "0",
+  color: "transparent",
   fontFamily: "Helvetica",
-  transform: "translate3d(0,-50px,0)",
   transition: "transform 350ms ease",
   textAlign: "center",
 });
@@ -44,10 +47,10 @@ const SubTitle = styled.h4({
 const Paragraph = styled.p({
   position: "absolute",
   top: "80px",
-  transform: "translate3d(0,-50px,0)",
   transition: "transform 350ms ease",
-  color: "black",
+  color: "transparent",
   textAlign: "center",
+  width: "90%"
 });
 
 const CTA = styled.a({
@@ -66,24 +69,28 @@ const CTA = styled.a({
 const Background = styled.div({
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
-  color: "#FFF",
+  color: "transparent",
   position: "relative",
   width: "100%",
   height:"500px",
   cursor: "pointer",
   backgroundImage: "${props => props.myImage}",
   [`:hover ${DisplayOver}`]: {
-    backgroundColor: "rgb(250,250,250)",
+    backgroundColor: "rgba(0,0,0,0.3)"
+  },
+  [`:hover ${Paragraph}`]: {
+    transition: "350ms ease all 0.1s",
   },
   [`:hover ${SubTitle}, :hover ${Paragraph}`]: {
     transform: "translate3d(0,0,0)",
-    color: "black"
+    transition: "350ms ease all 0.1s",
+    color: "white"
   },
   [`:hover ${Hover}`]: {
     opacity: 1,
   },
    [`:hover ${CTA}`]: {
-    color: "black"
+    color: "white"
   },
 });
 
@@ -132,15 +139,13 @@ render ()
 {
 	const { dotPosition } = this.state;
 	return (
-	<div className = "h-100">
- <Background style= {{backgroundImage: `url(${this.state.cover})`}}>
-  <DisplayOver>
+	<div className = "h-100" id="cardwrapper">
+ <Background id= "background" style= {{backgroundImage: `url(${this.state.cover})`}}>
+  <DisplayOver onClick={this.showModal}>
     <Hover>
-      <SubTitle>{this.state.title}</SubTitle>
       <Paragraph>
         {this.state.description}
       </Paragraph>
-      <CTA onClick={this.showModal}>View More +</CTA>
     </Hover>
   </DisplayOver>
 </Background>

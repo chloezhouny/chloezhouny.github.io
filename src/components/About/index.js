@@ -156,11 +156,11 @@ constructor(props) {
       	 <div className="container aboutContent">
          <div className = "row shortIntro">
           <div className = "col-12 ">
-          <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Always ambitious'}</Texty>
-          <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'creative and artful'}</Texty>
-          <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'specialized in'}</Texty>
-          <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'interactive experiences'}</Texty>
-          <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && '& animation'}</Texty>
+          <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Chloe.'}</Texty>
+          <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Determination and imagination.'}</Texty>
+          <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Building and developing interactive experiences.'}</Texty>
+          <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Creating flare with color'}</Texty>
+          <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && '& meaningful animation.'}</Texty>
           </div>
          </div>
           <div className = "row" id = "skill">
@@ -300,11 +300,8 @@ constructor(props) {
             <div className = "col-6">
               <div id = "paragraph">
                   <h2>Passion </h2>
-                  <p> More than a full stack web developer, Chloe sees herself as a Always ambitious and passionate about learning new technologies.
-
-    Aspiring Full Stack Web Developer with a background in Finance and life-long dedication of curiosity. Effective at combining creativity and problem solving to develop user-friendly applications.
-
-Currently seeking for entry-level software engineering opportunities or Internship/Co-ops in 2019. </p> 
+                  <p> As a full-stack web developer with a background in finance, Chloe enjoys solving problems and presenting solutions that incorporate new technologies. Chloe has consistent record of constructing and executing model view controller frameworks.
+Her applications focus on delivering user-friendly experiences. Chloe is driven by creativity and a life-long dedication to curiosity. Chloe currently seeks to build powerful applications and deliver dynamic products as an entry-level software engineer. Her language of choice is C++ and JavaScript.</p> 
               </div>
             </div>
       </div>

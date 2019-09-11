@@ -6,10 +6,23 @@
 	/*background-image: url("https://images.unsplash.com/photo-1545486332-9e0999c535b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80");*/
 }
 
-h1
+#projectWrapper h1
 {
 	color: white;
+	opacity: 0.1;
+	font-size: 15vw;
+/*	letter-spacing: 0.1em;*/
+	position: absolute;
+	font-family: 'Playfair Display', serif;
 }
+
+.ant-tabs-nav-scroll {
+	display: flex;
+	justify-content: center;
+	width: ;
+}
+
+
 
 .ant-tabs-bar
 {
@@ -36,19 +49,32 @@ h1
 {
 	background-color: white;
 	height: 1px;
-	margin-bottom: 1%;
+	margin-bottom: 2% !important;
+	opacity: 0.8;
+}
+
+.ant-tabs-tabpane
+{
+	margin-top: 3%;
 }
 
 .cardbody
 {
 	padding: 0;
+
+}
+
+#projectWrapper
+{
+	margin-top: 12%;
+	width: 84%;
+	height: 100%;
 }
 
 #projectContent
 {
 	margin-top: 10%;
-	width: 84%;
-	height: 100%;
+	font-family: 'Playfair Display', serif;
 }
 
 .col-8 {
@@ -70,11 +96,13 @@ h1
 {
 	color: white;
 	text-align: center;
-	margin-top: 5%;
+	margin-top: 10%;
+	opacity: 0.9;
 }
 .left .card
 {
 	margin-top: 20%;
+	margin-bottom: 25%;
 
 }
 
@@ -83,6 +111,7 @@ h1
 .right .card
 {
 	margin-top: 20%;
+	margin-bottom: 25%;
 }
 
 .right .card div
