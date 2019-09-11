@@ -16,7 +16,6 @@
     "react-scripts": "3.1.1"
   },
   "scripts": {
-    "deploy": "node --version",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -50,5 +49,5 @@
   "bugs": {
     "url": "https://github.com/chloezhouny/chloezhouny.github.io/issues"
   },
-  "homepage": "https://github.com/chloezhouny/chloezhouny.github.io#readme"
+  "homepage": "https://chloezhouny.github.io/"
 }
