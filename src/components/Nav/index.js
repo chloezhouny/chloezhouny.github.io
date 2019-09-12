@@ -26,9 +26,9 @@ constructor(props)
   }
 
   componentDidUpdate() {
-        this.state.scroll > this.state.top ? 
-            document.body.style.paddingTop = `${this.state.height}px` :
-            document.body.style.paddingTop = 0;
+        // this.state.scroll > this.state.top ? 
+        //     document.body.style.paddingTop = `${this.state.height}px` :
+        //     document.body.style.paddingTop = 0;
     }
 
   handleScroll() {

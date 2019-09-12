@@ -1,4 +1,5 @@
 import React, { Component }  from 'react';
+import Nav from '../Nav';
 import './style.css';
 import c from './audio/c.m4a';
 import d from './audio/d.m4a';
@@ -910,23 +911,24 @@ window.Fluid.initialize();
       render() {
       	return (
      <div id="body">
-     <div className = "container name ">
-		<div className = "row">
+        <Nav id="nav"/>
+        <div className = "container name ">
+		  <div className = "row">
 			<div id = "name" className = "col-12 d-flex justify-content-center uk-animation-toggle">
 				<h1 id="c" onClick={this.onClickC.bind(this)}>C</h1>
-				<h1 id="d" onClick={this.onClickD.bind(this)}>H</h1>
-				<h1 id="e" onClick={this.onClickE.bind(this)}>L</h1>
-				<h1 id="f" onClick={this.onClickF.bind(this)}>O</h1>
-				<h1 id="g" onClick={this.onClickG.bind(this)}>E</h1>
+				<h1 id="d" onClick={this.onClickD.bind(this)}>h</h1>
+				<h1 id="e" onClick={this.onClickE.bind(this)}>l</h1>
+				<h1 id="f" onClick={this.onClickF.bind(this)}>o</h1>
+				<h1 id="g" onClick={this.onClickG.bind(this)}>e</h1>
 				<h1 id="a" onClick={this.onClickA.bind(this)}>Z</h1>
-				<h1 id="b" onClick={this.onClickB.bind(this)}>H</h1>
-				<h1 id="c2" onClick={this.onClickC2.bind(this)}>O</h1>
-				<h1 id="d2" onClick={this.onClickD2.bind(this)}>U</h1>
+				<h1 id="b" onClick={this.onClickB.bind(this)}>h</h1>
+				<h1 id="c2" onClick={this.onClickC2.bind(this)}>o</h1>
+				<h1 id="d2" onClick={this.onClickD2.bind(this)}>u</h1>
 			</div>
 		</div>
 		<div className = "row mt-1">
 			<div className = "col-12 d-flex justify-content-center">
-				<h3>FULL-STACK WEB DEVELOPER</h3>
+				<h3>Full-Sack Web Developer</h3>
 			</div>
 		</div>
 		</div>
