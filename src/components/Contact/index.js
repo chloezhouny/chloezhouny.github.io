@@ -19,6 +19,9 @@ class Contact extends Component {
       render() {
         return (
         <div id="contactBody"> 
+         <div id="contactWrapper" className = "w-100 h-100">
+            <h1>Test</h1>
+          </div>
           <div className="container w-75" id = "contactContent">
             <div className = "row">
               <div className = "col-12 contactLine">
@@ -56,6 +59,7 @@ class Contact extends Component {
               </div>
             </div>
           </div>
+
         </div>
 
 

@@ -153,6 +153,8 @@ constructor(props) {
 
       	return (
         <div id="aboutBody"> 
+        <div id="aboutwrapper">
+        </div>
       	 <div className="container aboutContent">
          <div className = "row shortIntro">
           <div className = "col-12 ">
@@ -213,7 +215,7 @@ constructor(props) {
                   </ul>
                 </div>
             
-          <div className = "col-2">
+          <div className = "col-2" id="svgwrapper">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
      width="340px" height="333px" viewBox="0 0 500 500" enable-background="new 0 0 340 333" xmlSpace="preserve">
 
@@ -292,7 +294,7 @@ constructor(props) {
 
         
         <div className = "row" id="me">
-            <div className = "col-6">
+            <div className = "col-5">
               <div id="chloe">
                 <img src={profile}/>
               </div>
