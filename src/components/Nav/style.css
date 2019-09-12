@@ -8,6 +8,8 @@
   	position: absolute;
 }
 
+
+
 .bg-light
 {
 	background-color: transparent !important;
@@ -17,6 +19,11 @@
 {
 	width: 100%;
 	z-index: 100;
+}
+
+.nav-link, .navbar-brand
+{
+	color: white !important;
 }
 
 .sticky {

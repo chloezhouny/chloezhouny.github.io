@@ -158,7 +158,7 @@ constructor(props) {
           <div className = "col-12 ">
           <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Chloe.'}</Texty>
           <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Determination and imagination.'}</Texty>
-          <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Building and developing interactive experiences.'}</Texty>
+          <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Building interactive experiences.'}</Texty>
           <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Creating flare with color'}</Texty>
           <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && '& meaningful animation.'}</Texty>
           </div>

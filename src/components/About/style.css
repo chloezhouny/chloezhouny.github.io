@@ -15,17 +15,19 @@
 {
 	font-size: 4vw;
     line-height: 1em;
+    font-family: 'Playfair Display', serif;
 }
 
 .shortIntro
 {
-	margin-top: 15%;
+	margin-top: 20%;
 }
 
 .shortIntro .shortIntrotext
 {
-	font-size: 3vw;
+	font-size: 4vw;
     line-height: 1.8em;
+    font-family: 'Playfair Display', serif;
 }
 
 #me
@@ -71,7 +73,7 @@ img
 
 #skill
 {
-	margin-top: 5%;
+	margin-top: 10%;
 }
 
 
