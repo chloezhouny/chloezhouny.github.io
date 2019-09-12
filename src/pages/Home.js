@@ -46,9 +46,11 @@ class Home extends Component {
       render() {
       	return (
       		<div id="homeContainer">
-	      		<Canvas/>	      		
-	      		<About />
-	      		<Project />
+      			<div id="main">
+		      		<Canvas/>	      		
+		      		<About />
+		      		<Project />
+	      		</div>
 	      		<Contact />
       		</div>
 

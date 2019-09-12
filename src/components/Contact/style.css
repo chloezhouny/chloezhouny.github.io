@@ -1,12 +1,10 @@
 #contactBody
 {
 	clear: both;
-	background-color: black;
-	min-height: 100vh;
-	max-height: 100vh;
 	background-image: url("https://images.unsplash.com/photo-1527607976958-7cbb4a6d0131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2743&q=80");
 	background-size: cover;
-	position: relative;
+	width: 100%;
+	min-height: 100vh;
 }
 
 #contactWrapper
@@ -14,8 +12,8 @@
 	background-color: black;
 	opacity: 0.5;
 	width: 100%;
-	min-height: 100vh;
 	position: absolute;
+
 }
 #contactContent
 {
@@ -31,6 +29,8 @@
 	margin-bottom: 0;
 	transform: scaleY(1.1);
 	letter-spacing: 2px;
+	opacity: 0.9;
+
 	
 }
 
@@ -43,6 +43,7 @@
 	color: white;
 	font-size: 1.4vw;
 	font-family: 'Playfair Display', serif;
+	opacity: 0.9;
 
 }
 
@@ -66,6 +67,7 @@
 	color: white;
 	text-align: center;
 	font-family: 'Playfair Display', serif;
+	opacity: 0.9;
 	
 }
 

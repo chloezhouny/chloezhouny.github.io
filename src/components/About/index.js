@@ -45,7 +45,7 @@ constructor(props) {
     switch (e.index) {
       case 0:
         return {
-          rotate: 90,
+          rotate: 30,
           opacity: 0,
           y: -60,
         };
@@ -78,11 +78,11 @@ constructor(props) {
         return {
           enter: [
             {
-              scale: 2,
+              scale: 1.2,
               opacity: 0,
               type: 'set',
             },
-            { scale: 1.2, opacity: 1, duration: 300 },
+            { scale: 1.2, opacity: 1, duration: 100 },
             { scale: 0.9, duration: 200 },
             { scale: 1.05, duration: 150 },
             { scale: 1, duration: 100 },
@@ -94,7 +94,7 @@ constructor(props) {
       case 6:
         return {
           scale: 0.8,
-          x: 30,
+          x: 10,
           y: -10,
           opacity: 0,
         };
@@ -111,6 +111,8 @@ constructor(props) {
         };
     }
   }
+
+
 
    changeOpacity = () => {
     this.setState({
@@ -158,8 +160,8 @@ constructor(props) {
       	 <div className="container aboutContent">
          <div className = "row shortIntro">
           <div className = "col-12 ">
-          <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Chloe.'}</Texty>
-          <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Determination and imagination.'}</Texty>
+          <Texty id="chloeword" className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Chloe.'}</Texty>
+          <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Determination & imagination.'}</Texty>
           <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Building interactive experiences.'}</Texty>
           <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Creating flare with color'}</Texty>
           <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && '& meaningful animation.'}</Texty>
