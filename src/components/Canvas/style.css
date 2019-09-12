@@ -3,7 +3,7 @@
 #body
 {
 	color: white;
-	height: calc(100vh - 80px);
+	height: calc(100vh - 5.2vw);
 	position: relative;
 	cursor: grab;
 	overflow: hidden;
@@ -14,13 +14,15 @@
 
 canvas{
     position: absolute;
-    top: 0;
+    top: -7vh;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
     border: 2px solid white;
+    border-color: rgba(0,0,0,0.4);
     z-index: 0;
+
 
 }
 
@@ -28,23 +30,38 @@ canvas{
 .name
 {
 	position: absolute;
-	top: 40%;
-	left: 10%;
+	top: 30%;
 	text-align: center;
 	background-color: Transparent;
 	border: none;
 	z-index: 2;
+	width: 100%;
 
 }
 
 .name h1, .name h3
 {
 	color: white;
-	letter-spacing: 1em;
 	background-color: Transparent;
+	z-index: 20;
+}
+
+
+.name h1
+{
+	letter-spacing: 0.9em;
+	font-size: 2.8vw;
+	margin-top: 4%;
+/*	    font-family: 'Playfair Display', serif;*/
+
 }
 
 .name h3
+{
+	letter-spacing: 0.7em;
+	font-size: 1.8vw;
+/*	    font-family: 'Playfair Display', serif;*/
+}
 
 
 

@@ -19,6 +19,7 @@
 {
 	width: 100%;
 	z-index: 100;
+	padding-top: 4.5%;
 }
 
 .nav-link, .navbar-brand
@@ -36,4 +37,15 @@
 {
 	display: flex;
 	justify-content: flex-end;
+}
+
+.navbar-nav
+{
+	margin-right: 6%;
+	font-family: 'Playfair Display', serif;
+}
+
+.navbar-brand
+{
+	margin-left: 4%;
 }
