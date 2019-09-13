@@ -72,7 +72,7 @@ const Background = styled.div({
   color: "transparent",
   position: "relative",
   width: "100%",
-  height:"500px",
+  height:"36vw",
   cursor: "pointer",
   backgroundImage: "${props => props.myImage}",
   [`:hover ${DisplayOver}`]: {

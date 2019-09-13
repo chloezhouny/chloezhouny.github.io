@@ -184,7 +184,7 @@ constructor(props) {
         <div ref='about' id="aboutBody"> 
       	 <div className="container aboutContent">
           <div className = "row" id="aboutdivider">
-           </div>
+           <div className = "col-12">
          <div className = "row shortIntro">
           <div className = "col-12 ">
           <Texty className = "shortIntrotext" enter={this.getEnter} leave={this.getEnter}>{'Chloe.'}</Texty>
@@ -193,6 +193,8 @@ constructor(props) {
           <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Creating flare with color'}</Texty>
           <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && '& meaningful animation.'}</Texty>
           </div>
+         </div>
+         </div>
          </div>
           <div className = "row" id = "skill">
             <div className = "col-12" >
@@ -246,7 +248,7 @@ constructor(props) {
             
           <div className = "col-2" id="svgwrapper">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     width="30vw" height="40vh" viewBox="0 0 500 500" enable-background="new 0 0 340 333" xmlSpace="preserve">
+     width="30vw" height="20vw" viewBox="0 0 500 500" enable-background="new 0 0 340 333" xmlSpace="preserve">
 
   <path className="path" fill="#FFFFFF" stroke="#000000" stroke-width="4" stroke-miterlimit="10" 
   d="M298.1,158.1c0.1-0.1,0.3-0.2,0.5-0.3c4.4-2.5,9.5-3.9,14.6-3.9c3.8,4.7,0.5,19.6-1.9,24.7

@@ -101,6 +101,8 @@
 .card
 {
 	background-color: transparent;
+	margin-top: 20%;
+	margin-bottom: 25%;
 
 }
 
@@ -110,28 +112,20 @@
 	text-align: center;
 	margin-top: 10%;
 	opacity: 0.9;
+	font-size: 2.2vw;
 }
-.left .card
-{
-	margin-top: 20%;
-	margin-bottom: 25%;
 
-}
+
 
 .card p
 {
 	color: white;
 	text-align: center;
 	opacity: 0.8;
+	font-size: 1vw;
 }
 
 
-
-.right .card
-{
-	margin-top: 20%;
-	margin-bottom: 25%;
-}
 
 .right .card div
 {
