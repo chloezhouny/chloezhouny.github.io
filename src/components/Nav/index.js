@@ -14,7 +14,10 @@ constructor(props)
           about:false,
           project: false,
           contact: false,
-          home: true
+          home: true,
+          step: 1,
+          changingCount: 0,
+          brandColor: ""
           };
 
           this.handleScroll = this.handleScroll.bind(this);
@@ -22,6 +25,7 @@ constructor(props)
           this.changeOpacity2 = this.changeOpacity2.bind(this);
           this.changeOpacity3 = this.changeOpacity3.bind(this);
           this.changeOpacity4 = this.changeOpacity4.bind(this);
+          this.changingColor = this.changingColor.bind(this);
       }
 
   componentDidMount() {
@@ -31,6 +35,9 @@ constructor(props)
     console.log(el);
     this.setState({top: el.offsetTop, height: el.offsetHeight});
     window.addEventListener('scroll', this.handleScroll);
+    this.changingColor();
+    this.test();
+    setInterval(this.changingColor,50);
   }
 
   componentDidUpdate() {
@@ -81,6 +88,39 @@ constructor(props)
     });
   }
 
+  changingColor = () => {  
+
+    console.log("brand color", this.state.brandColor);
+
+      var red =   this.state.changingCount;
+      var green = this.state.changingCount;
+      var blue =  this.state.changingCount; 
+
+    this.state.changingCount = this.state.changingCount + this.state.step * 1.5;
+
+    if (this.state.changingCount > 70)
+    {
+       this.setState({
+      step: -1
+    });
+    }
+
+    if (this.state.changingCount === 0)
+    {
+      this.setState({
+      step: 1
+    }); 
+    }
+
+    this.setState({
+      brandColor: `rgb(${red},${green},${blue})`
+    }); 
+}
+
+test = () => {
+   console.log("in test")
+  }
+
 
   onClick = () => {
     // this.setState({
@@ -98,11 +138,16 @@ render ()
   let nav_class2 = this.state.project ? "nav-link clicked" : "nav-link notclicked";
   let nav_class3 = this.state.contact ? "nav-link clicked" : "nav-link notclicked";
   let nav_color = this.state.scroll > 600 && this.state.scroll < 2600 ? "black" : "white";
+  let brand_color = this.state.brandColor;
+  let style = 
+  {
+    backgroundColor: brand_color
+  }
 
 	return (
 
 <nav ref='nav' className="sticky navbar navbar-expand-lg navbar-light bg-light">
-  <a className="navbar-brand" href="#body" onClick={this.changeOpacity1}>cz</a>
+  <a className="navbar-brand" style={style} href="#body" onClick={this.changeOpacity1}>cz</a>
   <div className="collapse navbar-collapse" id="navbarNav">
     <ul className="navbar-nav" >
       <li className="nav-item">

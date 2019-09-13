@@ -27,13 +27,14 @@ nav
 {
 	margin-left: 4%;
 	color: white !important;
-	border: 2px solid black;
+	border: 2px solid transparent;
 	background-color: black;
 	width: 4vw;
 	height: 4vw;
 	text-align: center;
 	align-items: center;
 	font-size: 2vw;
+
 }
 
 .sticky {
