@@ -22,10 +22,7 @@
 	padding-top: 4.5%;
 }
 
-.nav-link
-{
-	color: white;
-}
+
 
 .navbar-brand
 {
@@ -74,5 +71,15 @@
 .notclicked
 {
 	opacity: 1;
+}
+
+.white
+{
+	color: white !important;
+}
+
+.black
+{
+	color: black !important;
 }
 

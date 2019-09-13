@@ -34,9 +34,18 @@ constructor(props)
   }
 
   componentDidUpdate() {
-        // this.state.scroll > this.state.top ? 
-        //     document.body.style.paddingTop = `${this.state.height}px` :
-        //     document.body.style.paddingTop = 0;
+       const nav1 = this.refs.nav1;
+       const nav2 = this.refs.nav2;
+       const nav3 = this.refs.nav3;
+       console.log("scroll", this.state.scroll);
+
+       if (this.state.scroll < 300)
+       {
+
+       }
+      
+
+   
     }
 
   handleScroll() {
@@ -96,10 +105,11 @@ render ()
   let nav_class = this.state.about ? "nav-link clicked" : "nav-link notclicked";
   let nav_class2 = this.state.project ? "nav-link clicked" : "nav-link notclicked";
   let nav_class3 = this.state.contact ? "nav-link clicked" : "nav-link notclicked";
+  let nav_color = this.state.scroll > 600 && this.state.scroll < 2600 ? "black" : "white";
 
 	return (
 
-<nav ref='nav'  className={this.state.scroll > this.state.top ? "sticky navbar navbar-expand-lg navbar-light bg-light" : "navbar navbar-expand-lg navbar-light bg-light"}>
+<nav ref='nav' className="sticky navbar navbar-expand-lg navbar-light bg-light">
   <a className="navbar-brand" href="#body" onClick={this.changeOpacity1}>CZ</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
@@ -107,13 +117,13 @@ render ()
   <div className="collapse navbar-collapse" id="navbarNav">
     <ul className="navbar-nav" >
       <li className="nav-item">
-        <a className={nav_class} style={{color: this.state.about ? "black" : "white" }} href="#aboutBody" onClick={this.changeOpacity1}>About.</a>
+        <a ref='nav1' className={[nav_class, nav_color].join(' ')} href="#divider" onClick={this.changeOpacity1}>About.</a>
       </li>
       <li className="nav-item">
-        <a className={nav_class2} style={{color: this.state.about ? "black" : "white" }} href="#projectBody" onClick={this.changeOpacity2}>Projects.</a>
+        <a ref='nav2'className={[nav_class2, nav_color].join(' ')} href="#projectBody" onClick={this.changeOpacity2}>Projects.</a>
       </li>
       <li className="nav-item">
-        <a className={nav_class3} style={{color: this.state.about ? "black" : "white" }} href="#contactBody" onClick={this.changeOpacity3} >Contact.</a>
+        <a ref='nav3'className={[nav_class3, nav_color].join(' ')} href="#contactBody" onClick={this.changeOpacity3} >Contact.</a>
       </li>
     </ul>
   </div>

@@ -910,6 +910,7 @@ window.Fluid.initialize();
 
       render() {
       	return (
+    <div>
      <div id="body">
         <Nav id="nav"/>
         <div className = "name">
@@ -937,9 +938,11 @@ window.Fluid.initialize();
                 <canvas ref="canvas" width={500} height={500} id="canvas"></canvas>
             </div>
         </div>       
-		</div>      
+		</div>  
       </div>
-      
+      <div id = "divider">
+      </div>
+      </div>
       	);
 
 	}
