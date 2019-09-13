@@ -30,9 +30,11 @@
 	color: white !important;
 	border: 2px solid black;
 	background-color: black;
-	width: 2vw;
-	height: 2vw;
+	width: 4vw;
+	height: 4vw;
 	text-align: center;
+	align-items: center;
+	font-size: 2vw;
 }
 
 .sticky {
@@ -49,23 +51,26 @@
 
 .navbar-nav
 {
-	margin-right: 6%;
-	font-family: 'Playfair Display', serif;
+	margin-right: 3%;
+	/*font-family: 'News Cycle', serif;*/
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 }
 
 .nav-link
 {
 	font-size: 1.1vw;
+
 }
 
 .nav-link:hover
 {
-	opacity: 0.8;
+	opacity: 0.5;
 }
 
 .clicked
 {
-	opacity: 0.8;
+	opacity: 0.5;
 }
 
 .notclicked

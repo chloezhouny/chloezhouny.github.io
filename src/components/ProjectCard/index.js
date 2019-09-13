@@ -110,7 +110,8 @@ constructor(props)
           description: props.project.description,
           img: props.project.img,
           detail: props.project.detail,
-          link: props.project.link
+          link: props.project.link,
+          tech: props.project.tech
           };
 
       }
@@ -144,7 +145,6 @@ render ()
   <DisplayOver onClick={this.showModal}>
     <Hover>
       <Paragraph>
-        {this.state.description}
       </Paragraph>
     </Hover>
   </DisplayOver>
@@ -157,24 +157,26 @@ render ()
         >
         	<Carousel autoplay dotPosition={dotPosition}>
 		    <div>
-		      <h3><img src= {this.state.img[0]}/></h3>
-		    </div>
-		    <div>
-		      <h3><img src={this.state.img[1]}/></h3>
-		    </div>
-		    <div>
-		      <h3><img src={this.state.img[2]}/></h3>
-		    </div>
-		    <div>
-		      <h3><img src={this.state.img[3]}/></h3>
+		      <h3><img src= {this.state.img}/></h3>
 		    </div>
   			</Carousel>
   		  <div className = "projectContent">
-  		  	<h3>{this.state.title}</h3>
-  		  	<hr></hr>
-	         <p>{this.state.detail}</p>
-          <br></br>
-          <a href = {this.state.link}><Icon type="link" />     See the project</a>
+          <div className = "row">
+            <div className = "col-12 d-flex justify-content-center">
+    		  	   <h3 id="modaltitle">{this.state.title}</h3>
+            </div>
+          </div>
+          <div className = "row">
+            <div className = "col-7 offset-1">
+    	        <p>{this.state.detail}</p>
+              <br></br>
+              <a href = {this.state.link}><Icon type="link" />     See the project</a>
+            </div>
+            <div className = "col-3 offset-1">
+            {this.state.tech.map(tech => (
+        <li id="tech">{tech}</li> ))}       
+            </div>
+          </div>
         </div>
 
         </Modal>

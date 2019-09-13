@@ -38,14 +38,6 @@ constructor(props)
        const nav2 = this.refs.nav2;
        const nav3 = this.refs.nav3;
        console.log("scroll", this.state.scroll);
-
-       if (this.state.scroll < 300)
-       {
-
-       }
-      
-
-   
     }
 
   handleScroll() {
@@ -110,20 +102,20 @@ render ()
 	return (
 
 <nav ref='nav' className="sticky navbar navbar-expand-lg navbar-light bg-light">
-  <a className="navbar-brand" href="#body" onClick={this.changeOpacity1}>CZ</a>
+  <a className="navbar-brand" href="#body" onClick={this.changeOpacity1}>cz</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
   <div className="collapse navbar-collapse" id="navbarNav">
     <ul className="navbar-nav" >
       <li className="nav-item">
-        <a ref='nav1' className={[nav_class, nav_color].join(' ')} href="#divider" onClick={this.changeOpacity1}>About.</a>
+        <a ref='nav1' className={[nav_class, nav_color].join(' ')} href="#divider" onClick={this.changeOpacity1}>About. &nbsp;</a>
       </li>
       <li className="nav-item">
-        <a ref='nav2'className={[nav_class2, nav_color].join(' ')} href="#projectBody" onClick={this.changeOpacity2}>Projects.</a>
+        <a ref='nav2'className={[nav_class2, nav_color].join(' ')} href="#projectBody" onClick={this.changeOpacity2}>Projects. &nbsp;  </a>
       </li>
       <li className="nav-item">
-        <a ref='nav3'className={[nav_class3, nav_color].join(' ')} href="#contactBody" onClick={this.changeOpacity3} >Contact.</a>
+        <a ref='nav3'className={[nav_class3, nav_color].join(' ')} href="#contactBody" onClick={this.changeOpacity3} >Contact. &nbsp;  </a>
       </li>
     </ul>
   </div>

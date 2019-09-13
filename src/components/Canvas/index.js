@@ -910,8 +910,8 @@ window.Fluid.initialize();
 
       render() {
       	return (
-    <div>
-     <div id="body">
+    <div id="body">
+     <div id="homecontent">
         <Nav id="nav"/>
         <div className = "name">
 		  <div className = "row line1">

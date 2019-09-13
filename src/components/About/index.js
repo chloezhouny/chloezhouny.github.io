@@ -29,8 +29,12 @@ constructor(props) {
        gray: true,
        gray2: true,
        gray3: true,
-       show: false
+       show: false,
+       top: "",
+       height: ""
     }
+    this.handleScroll = this.handleScroll.bind(this);
+
   }
 
 
@@ -39,7 +43,30 @@ constructor(props) {
     this.setState({
       show: !this.state.show
     });
+
+    const el = this.refs.about;
+    console.log(el);
+    this.setState({top: el.offsetTop, height: el.offsetHeight});
+    window.addEventListener('scroll', this.handleScroll);
   }
+
+   handleScroll() {
+        this.setState({scroll: window.scrollY});
+        console.log("top", this.state.top);
+        console.log("height", this.state.height)
+        if (this.state.top === 932)
+        {
+             this.setState({
+              show: false
+              });
+             setTimeout(() => { 
+                this.setState({
+              show: true
+              });
+            }, 100);
+           
+        }
+    }
 
  getEnter = (e) => {
     switch (e.index) {
@@ -154,13 +181,13 @@ constructor(props) {
          let li_class3 = this.state.gray3 ? "grayli" : "blackli";
 
       	return (
-        <div id="aboutBody"> 
-        <div id="aboutwrapper">
-        </div>
+        <div ref='about' id="aboutBody"> 
       	 <div className="container aboutContent">
+          <div className = "row" id="aboutdivider">
+           </div>
          <div className = "row shortIntro">
           <div className = "col-12 ">
-          <Texty id="chloeword" className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Chloe.'}</Texty>
+          <Texty className = "shortIntrotext" enter={this.getEnter} leave={this.getEnter}>{'Chloe.'}</Texty>
           <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Determination & imagination.'}</Texty>
           <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Building interactive experiences.'}</Texty>
           <Texty className = "shortIntrotext" enter={this.getEnter} >{this.state.show && 'Creating flare with color'}</Texty>
@@ -219,9 +246,9 @@ constructor(props) {
             
           <div className = "col-2" id="svgwrapper">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     width="340px" height="333px" viewBox="0 0 500 500" enable-background="new 0 0 340 333" xmlSpace="preserve">
+     width="30vw" height="40vh" viewBox="0 0 500 500" enable-background="new 0 0 340 333" xmlSpace="preserve">
 
-  <path class="path" fill="#FFFFFF" stroke="#000000" stroke-width="4" stroke-miterlimit="10" 
+  <path className="path" fill="#FFFFFF" stroke="#000000" stroke-width="4" stroke-miterlimit="10" 
   d="M298.1,158.1c0.1-0.1,0.3-0.2,0.5-0.3c4.4-2.5,9.5-3.9,14.6-3.9c3.8,4.7,0.5,19.6-1.9,24.7
   c-3.2,6.8-10.4,11.5-14.7,17.8c-9.9,14.5-10.7,31-8.5,51.5c4.2-13.4,13.2-25.1,20.6-37c1,0.1-0.1,2.1,0.8,2.5c0.3,0.2,0.7,0,1-0.2
   c6.7-3.6,13.4-7.8,20.4-10.9c0.5,4.4,13.1-0.4,16-0.3c1.8,1.4-9,16.6-9.9,17.8c1,0.9,2.5,1,3.6,0.3c-3.2,7.7-8.5,14.5-15.1,19.5

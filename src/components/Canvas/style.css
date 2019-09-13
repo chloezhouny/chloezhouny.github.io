@@ -3,16 +3,22 @@
 #body
 {
 	color: white;
-	height: calc(100vh - 5.2vw);
+	height: 100vh;
+	position: relative;
+	cursor: grab;
+}
+
+#homecontent
+{
+	height: 90%;
 	position: relative;
 	cursor: grab;
 	overflow: hidden;
 	background-color: black;
 }
-
 #divider
 {
-	height: 5.2vw;
+	height: 10%;
 	background-color: white;
 }
 
