@@ -30,8 +30,7 @@ constructor(props) {
        gray2: true,
        gray3: true,
        show: false,
-       top: "",
-       height: ""
+       scroll: ""
     }
     this.handleScroll = this.handleScroll.bind(this);
 
@@ -46,15 +45,17 @@ constructor(props) {
 
     const el = this.refs.about;
     console.log(el);
-    this.setState({top: el.offsetTop, height: el.offsetHeight});
+    // this.setState({top: el.offsetTop, height: el.offsetHeight});
     window.addEventListener('scroll', this.handleScroll);
   }
 
+
+
+
    handleScroll() {
         this.setState({scroll: window.scrollY});
-        console.log("top", this.state.top);
-        console.log("height", this.state.height)
-        if (this.state.top === 932)
+        console.log("scroll", this.state.scroll);
+        if (this.state.scroll < 800 && this.state.scroll > 700)
         {
              this.setState({
               show: false

@@ -22,6 +22,7 @@ class Canvas extends Component {
       play: false,
       pause: true,
       note: "",
+      top: ""
     };
 
 
@@ -912,7 +913,7 @@ window.Fluid.initialize();
       	return (
     <div id="body">
      <div id="homecontent">
-        <Nav id="nav"/>
+        <Nav id="nav" infoGet = {this.props.infoGet}/>
         <div className = "name">
 		  <div className = "row line1">
 			<div id = "name" className = "col-12 d-flex justify-content-center uk-animation-toggle">

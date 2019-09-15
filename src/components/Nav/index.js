@@ -36,7 +36,6 @@ constructor(props)
     this.setState({top: el.offsetTop, height: el.offsetHeight});
     window.addEventListener('scroll', this.handleScroll);
     this.changingColor();
-    this.test();
     setInterval(this.changingColor,50);
   }
 
@@ -44,7 +43,6 @@ constructor(props)
        const nav1 = this.refs.nav1;
        const nav2 = this.refs.nav2;
        const nav3 = this.refs.nav3;
-       console.log("scroll", this.state.scroll);
     }
 
   handleScroll() {
@@ -90,8 +88,6 @@ constructor(props)
 
   changingColor = () => {  
 
-    console.log("brand color", this.state.brandColor);
-
       var red =   this.state.changingCount;
       var green = this.state.changingCount;
       var blue =  this.state.changingCount; 
@@ -117,9 +113,6 @@ constructor(props)
     }); 
 }
 
-test = () => {
-   console.log("in test")
-  }
 
 
   onClick = () => {
