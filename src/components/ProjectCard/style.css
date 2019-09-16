@@ -42,7 +42,7 @@
 
 .ant-modal-close-x i svg
 {
-	width: 100%;
+	width: 0;
 	height: auto;
 }
 
@@ -68,10 +68,6 @@
 	width: 50vw !important;
 }
 
-.ant-carousel .slick-dots-bottom
-{
-	bottom: 30px;
-}
 
 h3 img
 {
