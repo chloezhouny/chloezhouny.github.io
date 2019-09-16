@@ -18,7 +18,7 @@
 
 #aboutdivider
 {
-	margin-top: 19%;
+	margin-top: 13%;
 	height: 64vh;
 }
 
@@ -29,13 +29,19 @@
 /*	position: absolute;*/
 }
 
+.shortIntro p
+{
+	font-size: 4vw;
+    line-height: 1em;
+    font-family: 'Playfair Display', serif;
+}
+
 
 .shortIntro .shortIntrotext
 {
-	font-size: 2.4vw;
+	font-size: 4vw;
     line-height: 1.8em;
-  /*  font-family: 'Playfair Display', serif;*/
-    	font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 #me
@@ -52,7 +58,7 @@
 	height: 13vw;
 	margin: 0 auto;
 	overflow: hidden;
-	margin-top: 20%;
+	margin-top: 8%;
 	margin-left: 0;
 	background-image: url("https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
 	background-size: cover;
@@ -82,8 +88,7 @@ img
 #paragraph p
 {
 	padding-top: 6%;
-/*	font-family: 'Playfair Display', serif;*/
-		font-family: 'Roboto', sans-serif;
+	font-family: 'Playfair Display', serif;
 	color: black;
 }
 
@@ -91,15 +96,13 @@ img
 
 #skill
 {
-	margin-top: 0%;
+	margin-top: 10%;
 	clear: both;
 }
 
-
 .skillContent p
 {
-	opacity: 1;
-	font-family: 'Roboto', sans-serif;
+	opacity:1;
 }
 
 .skillContent p,
@@ -123,7 +126,7 @@ img
   content: "";
   position: absolute;
   top: 65%;
-  height: 0.2rem;
+  height: 1.5px;
   width: 0%;
   left: 0px;
   background-color: rgba(0, 0, 0, 0.6);
@@ -133,7 +136,7 @@ img
   content: "";
   position: absolute;
   top: 65%;
-  height: 0.2rem;
+  height: 1.5px;
   width: 0%;
   left: 3%;
   background-color: rgba(0, 0, 0, 0.6);
@@ -149,7 +152,7 @@ img
 
 .skillContent:hover p::after {
   width: 90%;
-  transition: 0.5s ease all;
+  transition: 0.4s ease all;
   transition-delay: 0.3s
 }
 
@@ -157,16 +160,15 @@ img
 #skill ul
 {
 	padding-left: 0;
-		font-family: 'Roboto', sans-serif;
 }
 
 #skill li
 {
 	margin-bottom: 3.5%;
+	font-weight: bold;
 	padding: 1%;
 	transition: 0.2s ease all .2s;
 	font-size: 1vw;
-	font-weight: bold;
 }
 
 
@@ -189,7 +191,6 @@ img
 {
 	position: relative;
 	bottom: -10vw;
-	left: 7vw;
 }
 
 
