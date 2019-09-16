@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b40bad47.chunk.css",
+    "main.css": "/static/css/main.3d00b9c9.chunk.css",
     "main.js": "/static/js/main.52b028b3.chunk.js",
     "main.js.map": "/static/js/main.52b028b3.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.b56e0280.js",
@@ -9,10 +9,10 @@
     "static/js/2.62e41241.chunk.js": "/static/js/2.62e41241.chunk.js",
     "static/js/2.62e41241.chunk.js.map": "/static/js/2.62e41241.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.43d89580197452f7b4700512ea210473.js": "/precache-manifest.43d89580197452f7b4700512ea210473.js",
+    "precache-manifest.1df2caf85976ccdfe2bcafc5cd2ab097.js": "/precache-manifest.1df2caf85976ccdfe2bcafc5cd2ab097.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.23f0ecc3.chunk.css.map": "/static/css/2.23f0ecc3.chunk.css.map",
-    "static/css/main.b40bad47.chunk.css.map": "/static/css/main.b40bad47.chunk.css.map",
+    "static/css/main.3d00b9c9.chunk.css.map": "/static/css/main.3d00b9c9.chunk.css.map",
     "static/media/a.m4a": "/static/media/a.eaf6e247.m4a",
     "static/media/aladdin.jpg": "/static/media/aladdin.b6702ace.jpg",
     "static/media/alladin1.gif": "/static/media/alladin1.9277f0a4.gif",
