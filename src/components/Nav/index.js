@@ -47,6 +47,23 @@ constructor(props)
 
   handleScroll() {
         this.setState({scroll: window.scrollY});
+        var scrollNum = this.state.scroll;
+        if (scrollNum < 610)
+        {
+          this.changeOpacity4();
+        }
+        else if (scrollNum >=700 && scrollNum < 2608)
+        {
+          this.changeOpacity1();
+        }
+        else if (scrollNum >=2608 && scrollNum < 7900)
+        {
+          this.changeOpacity2();
+        }
+        else if (scrollNum >=7900)
+        {
+          this.changeOpacity3();
+        }
     }
 
     changeOpacity1 = () => {
@@ -140,7 +157,7 @@ render ()
 	return (
 
 <nav ref='nav' className="sticky navbar navbar-expand-lg navbar-light bg-light">
-  <a className="navbar-brand" style={style} href="#body" onClick={this.changeOpacity1}>cz</a>
+  <a className="navbar-brand" style={style} href="#body" onClick={this.changeOpacity4}>cz</a>
   <div className="collapse navbar-collapse" id="navbarNav">
     <ul className="navbar-nav" >
       <li className="nav-item">

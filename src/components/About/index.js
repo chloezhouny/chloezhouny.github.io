@@ -26,7 +26,7 @@ class About extends Component {
 constructor(props) {
     super(props);
     this.state = {
-       gray: true,
+       gray: false,
        gray2: true,
        gray3: true,
        show: false,
@@ -198,16 +198,16 @@ constructor(props) {
          </div>
          </div>
           <div className = "row" id = "skill">
-            <div className = "col-12" >
+            <div className = "col-10" >
             <div className = "row">
               <div className = "col-2 skillContent" >
-               <p onMouseEnter={this.changeOpacity.bind(this)}> Frontend </p>
+               <p className = {li_class} onMouseEnter={this.changeOpacity.bind(this)}> Frontend </p>
               </div>
               <div className = "col-2 skillContent" >
-               <p onMouseEnter={this.changeOpacity2.bind(this)}> Backend </p>
+               <p className = {li_class2} onMouseEnter={this.changeOpacity2.bind(this)}> Backend </p>
               </div>
               <div className = "col-2 skillContent" >
-               <p onMouseEnter={this.changeOpacity3.bind(this)}> Tools & Languages </p>
+               <p className = {li_class3} onMouseEnter={this.changeOpacity3.bind(this)}> Tools & Languages </p>
               </div>
             </div>
               <div className = "row">
@@ -249,7 +249,7 @@ constructor(props) {
             
           <div className = "col-2" id="svgwrapper">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     width="30vw" height="20vw" viewBox="0 0 500 500" enable-background="new 0 0 340 333" xmlSpace="preserve">
+     width="20vw" height="15vw" viewBox="0 0 500 500" enable-background="new 0 0 340 333" xmlSpace="preserve">
 
   <path className="path" fill="#FFFFFF" stroke="#000000" stroke-width="4" stroke-miterlimit="10" 
   d="M298.1,158.1c0.1-0.1,0.3-0.2,0.5-0.3c4.4-2.5,9.5-3.9,14.6-3.9c3.8,4.7,0.5,19.6-1.9,24.7
@@ -335,7 +335,7 @@ constructor(props) {
               <div id = "paragraph">
                   <h2>Passion </h2>
                   <p> As a full-stack web developer with a background in finance, Chloe enjoys solving problems and presenting solutions that incorporate new technologies. Chloe has consistent record of constructing and executing model view controller frameworks.
-Her applications focus on delivering user-friendly experiences. Chloe is driven by creativity and a life-long dedication to curiosity. Chloe currently seeks to build powerful applications and deliver dynamic products as an entry-level software engineer. Her language of choice is C++ and JavaScript.</p> 
+Her applications focus on delivering user-friendly experiences. Chloe is driven by creativity and a life-long dedication to curiosity. Chloe currently seeks to build powerful applications and deliver dynamic products as an entry-level software engineer.</p> 
               </div>
             </div>
       </div>
