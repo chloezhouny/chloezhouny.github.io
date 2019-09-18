@@ -34,11 +34,6 @@
 	right: 0;
 }
 
-.ant-modal-close-x i
-{
-
-}
-
 
 .ant-modal-close-x i svg
 {
@@ -68,10 +63,51 @@
 	width: 50vw !important;
 }
 
+.ant-carousel .slick-dots-bottom
+{
+	bottom: 2.3vw;
+}
+
 
 h3 img
 {
 	height: 30vw;
+}
+
+#left, #right
+{
+	width: 4.8vw;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	background-color: black;
+	opacity: 0.3;
+	text-align: center;
+}
+
+#left i svg, #right i svg
+{
+	width: 1.3vw;
+	height: 1.3vw;
+	color: white;
+
+}
+
+#right
+{
+	margin-right:0;
+	z-index: 20;
+}
+
+#arrow
+{
+	min-width: 100%;
+	position: relative;
+	top: -5vw;
+}
+
+#arrow .arrowcol
+{
+	justify-content: space-between;
 }
 
 
@@ -81,7 +117,7 @@ h3 img
 	padding-left: 4%;
 	padding-right: 4%;
 	padding-bottom: 2%;
-	margin-top: 3%;
+	margin-top: -3%;
 	font-family: 'Playfair Display', serif;
 }
 
@@ -109,4 +145,9 @@ h3 img
 {
 	opacity: 0.5;
 	transition: 0.3s ease all .3s;
+}
+
+#code
+{
+	margin-left: 8%;
 }
