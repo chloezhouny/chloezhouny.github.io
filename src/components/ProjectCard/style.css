@@ -79,8 +79,7 @@ h3 img
 	width: 4.8vw;
 	padding-top: 1vw;
 	padding-bottom: 1vw;
-	background-color: black;
-	opacity: 0.3;
+	background-color: rgba(0,0,0,0.3);
 	text-align: center;
 }
 

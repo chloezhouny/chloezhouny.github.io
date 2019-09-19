@@ -27,15 +27,15 @@ import incrowd3 from './images/incrowd3.gif';
 import incrowd4 from './images/incrowd4.gif';
 
 import rps1 from './images/rps1.gif';
-import rps2 from './images/rps1.gif';
-import rps3 from './images/rps1.gif';
-import rps4 from './images/rps1.gif';
+import rps2 from './images/rps2.gif';
+import rps3 from './images/rps3.gif';
+import rps4 from './images/rps4.gif';
 
 
-import clicky1 from './images/clicky1.png';
-import clicky2 from './images/clicky1.png';
-import clicky3 from './images/clicky1.png';
-import clicky4 from './images/clicky1.png';
+import clicky1 from './images/clicky1.gif';
+import clicky2 from './images/clicky2.gif';
+import clicky3 from './images/clicky3.gif';
+import clicky4 from './images/clicky4.gif';
 
 import cooking1 from './images/cooking1.png';
 import cooking2 from './images/cooking1.png';
@@ -49,22 +49,22 @@ import liri3 from './images/liri.gif';
 import liri4 from './images/liri.gif';
 
 import dota1 from './images/dota1.gif';
-import dota2 from './images/dota1.gif';
-import dota3 from './images/dota1.gif';
-import dota4 from './images/dota1.gif';
+import dota2 from './images/dota2.gif';
+import dota3 from './images/dota3.gif';
+import dota4 from './images/dota4.gif';
 
 
 import hp from './images/hp.jpg';
-import hp1 from './images/hp.gif';
-import hp2 from './images/hp.gif';
-import hp3 from './images/hp.gif';
-import hp4 from './images/hp.gif';
+import hp1 from './images/hp1.gif';
+import hp2 from './images/hp2.gif';
+import hp3 from './images/hp3.gif';
+import hp4 from './images/hp1.gif';
 
 import alladinc from './images/aladdin.jpg';
 import alladin1 from './images/alladin1.gif';
-import alladin2 from './images/alladin1.gif';
-import alladin3 from './images/alladin1.gif';
-import alladin4 from './images/alladin1.gif';
+import alladin2 from './images/alladin2.gif';
+import alladin3 from './images/alladin3.gif';
+import alladin4 from './images/alladin4.gif';
 
 
 
@@ -190,7 +190,7 @@ class Project extends Component {
           img: [hp1,hp2,hp3,hp4],
           tech: ["Javascript"],
           detail: "This project builds a harry potter hangman game that the comptuper randomly generate a spell from Harry Potter and the player tries to guess it by suggesting letters, within a certain number of guesses. ",
-          link: "https://phillipchang.github.io/venvi-fe/",
+          link: "https://chloezhouny.github.io/Harry-Potter-Hangman/",
           code: "https://github.com/chloezhouny/Harry-Potter-Hangman"
         }
 
