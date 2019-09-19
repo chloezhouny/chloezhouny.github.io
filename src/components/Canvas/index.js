@@ -53,7 +53,7 @@ class Canvas extends Component {
         y: 0,
         px: 0,
         py: 0,
-        down: false
+        down: true
     };
 
     /*
@@ -606,7 +606,7 @@ class Canvas extends Component {
   
     //This function is called whenever the mouse button is released.    
     function mouse_up_handler() {
-        mouse.down = false; 
+        mouse.down = true; 
     }
     
   
