@@ -85,7 +85,12 @@ canvas{
 
 #c:hover, #d:hover, #e:hover, #f:hover, #g:hover, #a:hover, #b:hover, #c2:hover, #d2:hover
 { 
-	transform: scale(1.1); 
+	transform: scale(1.2); 
+}
+
+#c:active, #d:active, #e:active, #f:active, #g:active, #a:active, #b:active, #c2:active, #d2:active
+{
+	transform: scale(0.9);
 }
 
 

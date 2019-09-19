@@ -94,7 +94,7 @@ class Project extends Component {
           description: "Yelp for Cars",
           img: [venvi1,venvi2,venvi3,venvi4],
           tech: ["React", "Three.js", "Passport", "Material UI", "Ant Design"],
-          detail: "VENVI is a web app where users can find and submit user reviews for specific models of cars, buy and sell cars and test drive in 3D. This app takes a different approach from the commonly seen critical reviews from cars, user reviews are also an important factor in influencing purchasing decisions and we provide that.",
+          detail: "VENVI is a web app where users can find and submit user reviews for specific models of cars, buy and sell cars and test drive in 3D (Click on screen and press g to start driving. Press c to change vehicle color). This app takes a different approach from the commonly seen critical reviews from cars, user reviews are also an important factor in influencing purchasing decisions and we provide that.",
           link: "https://phillipchang.github.io/venvi-fe/",
           code: "https://github.com/chloezhouny/VENVI"
         }
