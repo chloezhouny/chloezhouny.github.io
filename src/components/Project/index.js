@@ -12,19 +12,19 @@ import venvi4 from './images/venvi4.gif';
 
 
 import gymate1 from './images/gymate1.png';
-import gymate2 from './images/gymate1.png';
-import gymate3 from './images/gymate1.png';
-import gymate4 from './images/gymate1.png';
+import gymate2 from './images/gymate2.gif';
+import gymate3 from './images/gymate3.png';
+import gymate4 from './images/gymate4.gif';
 
 import pinme1 from './images/pinme1.gif';
-import pinme2 from './images/pinme1.gif';
-import pinme3 from './images/pinme1.gif';
-import pinme4 from './images/pinme1.gif';
+import pinme2 from './images/pinme2.gif';
+import pinme3 from './images/pinme3.gif';
+import pinme4 from './images/pinme4.gif';
 
 import incrowd1 from './images/incrowd1.gif';
-import incrowd2 from './images/incrowd1.gif';
-import incrowd3 from './images/incrowd1.gif';
-import incrowd4 from './images/incrowd1.gif';
+import incrowd2 from './images/incrowd2.gif';
+import incrowd3 from './images/incrowd3.gif';
+import incrowd4 from './images/incrowd4.gif';
 
 import rps1 from './images/rps1.gif';
 import rps2 from './images/rps1.gif';
