@@ -334,8 +334,8 @@ constructor(props) {
             <div className = "col-6">
               <div id = "paragraph">
                   <h2>Passion </h2>
-                  <p> As a full-stack web developer with a background in finance, Chloe enjoys solving problems and presenting solutions that incorporate new technologies. Chloe has consistent record of constructing and executing model view controller frameworks.
-Her applications focus on delivering user-friendly experiences. Chloe is driven by creativity and a life-long dedication to curiosity. Chloe currently seeks to build powerful applications and deliver dynamic products as an entry-level software engineer.</p> 
+                  <p> As a full-stack web developer with a background in finance, Chloe enjoys solving problems and presenting solutions that incorporate new technologies. She has consistent record of constructing and executing model view controller frameworks.
+Her applications focus on delivering user-friendly experiences. Chloe is driven by creativity and a life-long dedication to curiosity. She currently seeks to build powerful applications and deliver dynamic products as an entry-level software engineer.</p> 
               </div>
             </div>
       </div>

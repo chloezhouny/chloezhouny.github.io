@@ -54,7 +54,7 @@ class Contact extends Component {
                         <p> <a href = "https://medium.com/@chloezhouny">Medium</a> </p>
                       </div>
                       <div className = "col-1 linkwrapper">
-                        <p> Facebook. </p>
+                        <p> <a href = "https://www.instagram.com/zhouzhouchlo/">Instagram</a> </p>
                       </div>
                   </div>
               </div>

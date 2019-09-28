@@ -83,13 +83,16 @@ img
 #paragraph h2
 {
 	font-size: 2.2vw;
+	font-family: 'Roboto', sans-serif;
 }
 
 #paragraph p
 {
 	padding-top: 6%;
-	font-family: 'Playfair Display', serif;
+/*	font-family: 'Playfair Display', serif;*/
+    font-family: 'Roboto', sans-serif;
 	color: black;
+	font-size: 1vw;
 }
 
 
@@ -112,6 +115,7 @@ img
   text-decoration: none;
   font-size: 1.2vw;
   font-weight: bold;
+  	font-family: 'Roboto', sans-serif;
 
 }
 
