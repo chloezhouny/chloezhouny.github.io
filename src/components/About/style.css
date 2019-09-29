@@ -39,9 +39,10 @@
 
 .shortIntro .shortIntrotext
 {
-	font-size: 4vw;
+	font-size: 3.8vw;
     line-height: 1.8em;
-    font-family: 'Playfair Display', serif;
+/*    font-family: 'Playfair Display', serif;*/
+    font-family: 'Zapf Humanist',serif;
 }
 
 #me
@@ -71,24 +72,24 @@ img
 
 #paragraph
 {
-	width: 84%;
+	width: 92%;
 	line-height: 2em;
-	font-size: 1vw;
-	opacity: 0.99;
+	opacity: 0.8;
 	padding-top:6%;
-	font-family: 'Playfair Display', serif;
-	
+	font-family: 'Playfair Display', serif;	
 } 
 
 #paragraph h2
 {
-	font-size: 2.2vw;
+/*	font-size: 2.2vw;*/
 	font-family: 'Roboto', sans-serif;
+	 font-size: 1.4vw;
+	 font-weight: bold;
 }
 
 #paragraph p
 {
-	padding-top: 6%;
+	padding-top: 4%;
 /*	font-family: 'Playfair Display', serif;*/
     font-family: 'Roboto', sans-serif;
 	color: black;
@@ -103,11 +104,11 @@ img
 	clear: both;
 }
 
-.skillContent p
+/*.skillContent .count
 {
-	opacity:1;
+	opacity: 0;
 }
-
+*/
 .skillContent p,
 .skillContent p:hover,
 .skillContent p:focus,
@@ -115,13 +116,14 @@ img
   text-decoration: none;
   font-size: 1.2vw;
   font-weight: bold;
-  	font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 
 }
 
-.skillContent p:hover
+/*.skillContent p:hover
 {
 	opacity: 1;
+	transition: 0.7s ease all;
 }
 
 
@@ -144,21 +146,21 @@ img
   width: 0%;
   left: 3%;
   background-color: rgba(0, 0, 0, 0.6);
-  transition: 0.5s ease all .3s;
+  transition: 0.7s ease all;
 }
 
 .skillContent:hover p::before {
   width: 90%;
   transform: translateX(100%);
   background-color: rgba(0, 0, 0, 0);
-  transition: 0.5s ease-out;
+  transition: 0.7s ease-out;
 }
 
 .skillContent:hover p::after {
   width: 90%;
-  transition: 0.4s ease all;
+  transition: 0.7s ease all;
   transition-delay: 0.3s
-}
+}*/
 
 
 #skill ul
@@ -169,17 +171,54 @@ img
 #skill li
 {
 	margin-bottom: 3.5%;
-	font-weight: bold;
 	padding: 1%;
-	transition: 0.2s ease all .2s;
+
+	transition: 0.4s ease-in 0.5s;
+
 	font-size: 1vw;
+	font-family: 'Roboto', sans-serif;
+}
+
+.count
+{
+	position: absolute;
+	float: left;
+	bottom: 1.1vw;
+	font-weight:500 !important;
+	font-size: 0.89vw !important;
+	 transition: 0.2s ease all .3s;
+}
+
+#count1
+{
+
+	left: 6.1vw;
+}
+
+#count2
+{
+
+	left: 5.8vw;
+}
+
+#count3
+{
+
+	left: 11.4vw;
+}
+
+.transli
+{
+	opacity: 0;
 }
 
 
 .grayli
 {
-	opacity: 0.5;
+	opacity: 0.1;
 }
+
+
 
 .blackli
 {

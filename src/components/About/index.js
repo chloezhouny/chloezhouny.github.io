@@ -181,6 +181,10 @@ constructor(props) {
          let li_class2 = this.state.gray2 ? "grayli" : "blackli";
          let li_class3 = this.state.gray3 ? "grayli" : "blackli";
 
+        let count_class = this.state.gray ? "count transli" : "count blackli";
+        let count_class2 = this.state.gray2 ? "count transli" : "count blackli";
+        let count_class3 = this.state.gray3 ? "count transli" : "count blackli";
+
       	return (
         <div ref='about' id="aboutBody"> 
       	 <div className="container aboutContent">
@@ -201,13 +205,16 @@ constructor(props) {
             <div className = "col-12" >
             <div className = "row">
               <div className = "col-2 skillContent" >
-               <p className = {li_class} onMouseEnter={this.changeOpacity.bind(this)}> Frontend </p>
+               <p onMouseEnter={this.changeOpacity.bind(this)}> Frontend </p>
+               <p className = {count_class} id="count1">8</p>
               </div>
               <div className = "col-2 skillContent" >
-               <p className = {li_class2} onMouseEnter={this.changeOpacity2.bind(this)}> Backend </p>
+               <p onMouseEnter={this.changeOpacity2.bind(this)}> Backend </p>
+                <p className = {count_class2} id="count2">10</p>
               </div>
               <div className = "col-2 skillContent" >
-               <p className = {li_class3} onMouseEnter={this.changeOpacity3.bind(this)}> Tools & Languages </p>
+               <p onMouseEnter={this.changeOpacity3.bind(this)}> Tools & Languages </p>
+                <p className = {count_class3}  id="count3">3</p>
               </div>
             </div>
               <div className = "row">
@@ -326,12 +333,12 @@ constructor(props) {
 
         
         <div className = "row" id="me">
-            <div className = "col-5">
+            <div className = "col-6">
               <div id="chloe">
                 <img src={profile}/>
               </div>
             </div>
-            <div className = "col-6">
+            <div className = "col-5">
               <div id = "paragraph">
                   <h2>Passion </h2>
                   <p> As a full-stack web developer with a background in finance, Chloe enjoys solving problems and presenting solutions that incorporate new technologies. She has consistent record of constructing and executing model view controller frameworks.
