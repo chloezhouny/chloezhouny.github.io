@@ -1,21 +1,16 @@
-#projectBody
-{
-
+#projectBody {
 	clear: both;
 	background-color: rgb(17, 17, 17);
 	background-image: url("https://images.unsplash.com/photo-1545486332-9e0999c535b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80");
 	background-repeat: repeat-x;
 }
 
-#projectWrapper h1
-{
+#projectWrapper h1 {
 	color: white;
 	opacity: 0.1;
 	font-size: 15vw;
-/*	letter-spacing: 0.1em;*/
 	position: absolute;
-	font-family: 'Playfair Display', serif;
-
+	font-family: "Playfair Display", serif;
 }
 
 .ant-tabs-nav-scroll {
@@ -23,95 +18,75 @@
 	justify-content: center;
 }
 
-.ant-tab-nav
-{
+.ant-tab-nav {
 	width: 100% !important;
-
 }
 
-
-.ant-tabs-bar
-{
+.ant-tabs-bar {
 	border-bottom: none;
 }
 
-.ant-tabs-tab
-{
+.ant-tabs-tab {
 	color: white;
 	padding-bottom: 0;
 	font-size: 1.1vw;
 	opacity: 0.8;
 	font-weight: bold;
-	font-family: 'Roboto', sans-serif !important;
-
+	font-family: "Roboto", sans-serif !important;
 }
 
-.ant-tabs-nav .ant-tabs-tab:hover
-{
-	color: rgb(255,255,255,0.7);
+.ant-tabs-nav .ant-tabs-tab:hover {
+	color: rgb(255, 255, 255, 0.7);
 	font-weight: bold;
 }
 
-.ant-tabs-nav .ant-tabs-tab-active
-{
+.ant-tabs-nav .ant-tabs-tab-active {
 	color: white;
 	font-weight: bold;
 }
 
-.ant-tabs-ink-bar
-{
+.ant-tabs-ink-bar {
 	background-color: white;
 	height: 0.05rem;
 	margin-bottom: 2.6% !important;
 	opacity: 0.4;
 }
 
-.ant-tabs-tabpane
-{
+.ant-tabs-tabpane {
 	margin-top: 3%;
 }
 
-.cardbody
-{
+.cardbody {
 	padding: 0;
-
 }
 
-#projectWrapper
-{
+#projectWrapper {
 	margin-top: 12%;
 	width: 84%;
 	height: 100%;
 }
 
-#projectContent
-{
+#projectContent {
 	margin-top: 10%;
-	font-family: 'Playfair Display', serif;
+	font-family: "Playfair Display", serif;
 }
 
-
-
-
 .col-8 {
-    flex: 0 0 64%;
-    max-width: 64%;
+	flex: 0 0 64%;
+	max-width: 64%;
 }
 
 .offset-2 {
-    margin-left: 16%;
+	margin-left: 16%;
 }
 
-.card
-{
+.card {
 	background-color: transparent;
 	margin-top: 20%;
 	margin-bottom: 25%;
-
 }
 
-.card h2
-{
+.card h2 {
 	color: white;
 	text-align: center;
 	margin-top: 10%;
@@ -119,19 +94,13 @@
 	font-size: 2.2vw;
 }
 
-
-
-.card p
-{
+.card p {
 	color: white;
 	text-align: center;
 	opacity: 0.8;
 	font-size: 1vw;
 }
 
-
-
-.right .card div
-{
+.right .card div {
 	text-align: right;
 }

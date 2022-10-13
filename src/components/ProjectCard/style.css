@@ -1,152 +1,118 @@
-
-#cardwrapper
-{
+#cardwrapper {
 	overflow: hidden;
 }
 
-#background
-{
-
+#background {
 	transition: 0.5s ease all 0.1s;
 }
 
-
-
-#background:hover
-{
+#background:hover {
 	transform: scale(1.04);
 	transition: 0.5s ease all 0.1s;
 	overflow: hidden;
 }
 
-
-
-
-.ant-modal-footer
-{
+.ant-modal-footer {
 	opacity: 0;
 	height: 0;
 }
 
-.ant-modal-close-x
-{
+.ant-modal-close-x {
 	position: absolute;
 	right: 0;
 }
 
-
-.ant-modal-close-x i svg
-{
+.ant-modal-close-x i svg {
 	width: 0;
 	height: auto;
 }
 
-
-.ant-modal-body
-{
+.ant-modal-body {
 	padding: 0;
 }
 
-.ant-carousel
-{
+.ant-carousel {
 	height: 30%;
 }
 
-.ant-modal-close
-{
+.ant-modal-close {
 	height: 100%;
 }
 
-.ant-modal
-{
+.ant-modal {
 	top: 0;
 	width: 50vw !important;
 }
 
-.ant-carousel .slick-dots-bottom
-{
+.ant-carousel .slick-dots-bottom {
 	bottom: 2.3vw;
 }
 
-
-h3 img
-{
+h3 img {
 	height: auto;
 }
 
-#left, #right
-{
+#left,
+#right {
 	width: 4.8vw;
 	padding-top: 1vw;
 	padding-bottom: 1vw;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0, 0, 0, 0.3);
 	text-align: center;
 }
 
-#left i svg, #right i svg
-{
+#left i svg,
+#right i svg {
 	width: 1.3vw;
 	height: 1.3vw;
 	color: white;
-
 }
 
-#right
-{
-	margin-right:0;
+#right {
+	margin-right: 0;
 	z-index: 20;
 }
 
-#arrow
-{
+#arrow {
 	min-width: 100%;
 	position: relative;
 	top: -5vw;
 }
 
-#arrow .arrowcol
-{
+#arrow .arrowcol {
 	justify-content: space-between;
 }
 
-
-
-.projectContent
-{
+.projectContent {
 	padding-left: 4%;
 	padding-right: 4%;
 	padding-bottom: 2%;
 	margin-top: -3%;
-	font-family: 'Playfair Display', serif;
+	font-family: "Playfair Display", serif;
 }
 
-.projectContent #modaltitle
-{
+.projectContent #modaltitle {
 	font-size: 3vw;
 	margin-bottom: 6%;
 }
 
-.projectContent p, .projectContent li
-{
+.projectContent p,
+.projectContent li {
 	font-size: 0.9vw;
 }
 
-
-.projectContent a
-{
+.projectContent a {
 	color: black;
 	opacity: 0.7;
-	transition: 0.3s ease all .3s;
+	transition: 0.3s ease all 0.3s;
 	font-size: 1vw;
 }
 
-.projectContent a:hover
-{
+.projectContent a:hover {
 	opacity: 0.5;
-	transition: 0.3s ease all .3s;
+	transition: 0.3s ease all 0.3s;
 }
 
-#code
-{
+#code {
 	margin-left: 8%;
 }

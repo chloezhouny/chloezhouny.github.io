@@ -1,59 +1,43 @@
-
-
-
-
-#aboutBody
-{
+#aboutBody {
 	min-height: 100vh;
 	margin-bottom: 1%;
 	cursor: grab;
-	
 }
 
-
-.aboutContent
-{
+.aboutContent {
 	margin-left: 16%;
 }
 
-#aboutdivider
-{
+#aboutdivider {
 	margin-top: 13%;
 	height: 64vh;
 }
 
-.shortIntro
-{
+.shortIntro {
 	margin-top: 0;
 	top: 11%;
-/*	position: absolute;*/
+	/*	position: absolute;*/
 }
 
-.shortIntro p
-{
+.shortIntro p {
 	font-size: 4vw;
-    line-height: 1em;
-    font-family: 'Playfair Display', serif;
+	line-height: 1em;
+	font-family: "Playfair Display", serif;
 }
 
-
-.shortIntro .shortIntrotext
-{
+.shortIntro .shortIntrotext {
 	font-size: 3.8vw;
-    line-height: 1.8em;
-/*    font-family: 'Playfair Display', serif;*/
-    font-family: 'Zapf Humanist',serif;
+	line-height: 1.8em;
+	/*    font-family: 'Playfair Display', serif;*/
+	font-family: "Zapf Humanist", serif;
 }
 
-#me
-{
+#me {
 	padding-top: 20%;
 	height: 100vh;
 }
 
-
-#chloe
-{
+#chloe {
 	border-radius: 50%;
 	width: 10vw;
 	height: 13vw;
@@ -65,41 +49,34 @@
 	background-size: cover;
 }
 
-img
-{
+img {
 	width: 100%;
 }
 
-#paragraph
-{
+#paragraph {
 	width: 92%;
 	line-height: 2em;
 	opacity: 0.8;
-	padding-top:6%;
-	font-family: 'Playfair Display', serif;	
-} 
-
-#paragraph h2
-{
-/*	font-size: 2.2vw;*/
-	font-family: 'Roboto', sans-serif;
-	 font-size: 1.4vw;
-	 font-weight: bold;
+	padding-top: 6%;
+	font-family: "Playfair Display", serif;
 }
 
-#paragraph p
-{
+#paragraph h2 {
+	/*	font-size: 2.2vw;*/
+	font-family: "Roboto", sans-serif;
+	font-size: 1.4vw;
+	font-weight: bold;
+}
+
+#paragraph p {
 	padding-top: 4%;
-/*	font-family: 'Playfair Display', serif;*/
-    font-family: 'Roboto', sans-serif;
+	/*	font-family: 'Playfair Display', serif;*/
+	font-family: "Roboto", sans-serif;
 	color: black;
 	font-size: 1vw;
 }
 
-
-
-#skill
-{
+#skill {
 	margin-top: 10%;
 	clear: both;
 }
@@ -113,11 +90,10 @@ img
 .skillContent p:hover,
 .skillContent p:focus,
 .skillContent p:active {
-  text-decoration: none;
-  font-size: 1.2vw;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
-
+	text-decoration: none;
+	font-size: 1.2vw;
+	font-weight: bold;
+	font-family: "Roboto", sans-serif;
 }
 
 /*.skillContent p:hover
@@ -162,92 +138,72 @@ img
   transition-delay: 0.3s
 }*/
 
-
-#skill ul
-{
+#skill ul {
 	padding-left: 0;
 }
 
-#skill li
-{
+#skill li {
 	margin-bottom: 3.5%;
 	padding: 1%;
 
 	transition: 0.4s ease-in 0.5s;
 
 	font-size: 1vw;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
-.count
-{
+.count {
 	position: absolute;
 	float: left;
 	bottom: 1.1vw;
-	font-weight:500 !important;
+	font-weight: 500 !important;
 	font-size: 0.89vw !important;
-	 transition: 0.2s ease all .3s;
+	transition: 0.2s ease all 0.3s;
 }
 
-#count1
-{
-
+#count1 {
 	left: 6.1vw;
 }
 
-#count2
-{
-
+#count2 {
 	left: 5.8vw;
 }
 
-#count3
-{
-
+#count3 {
 	left: 11.4vw;
 }
 
-.transli
-{
+.transli {
 	opacity: 0;
 }
 
-
-.grayli
-{
+.grayli {
 	opacity: 0.1;
 }
 
-
-
-.blackli
-{
+.blackli {
 	opacity: 1;
 }
 
-#skill ul
-{
+#skill ul {
 	list-style-type: none;
 }
 
-#svgwrapper
-{
+#svgwrapper {
 	position: relative;
 	bottom: -10vw;
 }
 
-
-
 .path {
-  stroke-dasharray: 2000;
-  animation: dash 5s linear alternate infinite;
+	stroke-dasharray: 2000;
+	animation: dash 5s linear alternate infinite;
 }
 
 @keyframes dash {
-  from {
-    stroke-dashoffset: 2000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
+	from {
+		stroke-dashoffset: 2000;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
 }

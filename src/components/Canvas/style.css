@@ -1,46 +1,35 @@
-
-
-#body
-{
+#body {
 	color: white;
 	height: 100vh;
 	position: relative;
 	cursor: grab;
 }
 
-#homecontent
-{
+#homecontent {
 	height: 90%;
 	position: relative;
 	cursor: grab;
 	overflow: hidden;
 	background-color: black;
 }
-#divider
-{
+#divider {
 	height: 10%;
 	background-color: white;
 }
 
-
-
-canvas{
-    position: absolute;
-    top: -7vh;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    border: 4px solid white;
-    border-color: rgba(255,255,255,0.5);
-    z-index: 0;
-
-
+canvas {
+	position: absolute;
+	top: -7vh;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	border: 4px solid white;
+	border-color: rgba(255, 255, 255, 0.5);
+	z-index: 0;
 }
 
-
-.name
-{
+.name {
 	position: absolute;
 	top: 30%;
 	text-align: center;
@@ -48,49 +37,61 @@ canvas{
 	border: none;
 	z-index: 2;
 	width: 100%;
-
 }
 
-.name h1, .name h3
-{
+.name h1,
+.name h3 {
 	color: white;
 	background-color: Transparent;
 	z-index: 20;
 }
 
-
-.name h1
-{
+.name h1 {
 	letter-spacing: 0.9em;
 	font-size: 2.8vw;
 	margin-top: 4%;
-	font-family: 'Playfair Display', serif;
-/*		font-family: 'Roboto', sans-serif;*/
-
+	font-family: "Playfair Display", serif;
+	/*		font-family: 'Roboto', sans-serif;*/
 }
 
-.name h3
-{
+.name h3 {
 	letter-spacing: 0.7em;
 	font-size: 1.8vw;
-	    font-family: 'Playfair Display', serif;
+	font-family: "Playfair Display", serif;
 }
 
-
-
-#c, #d, #e, #f, #g, #a, #b, #c2, #d2
-{
-	transition: all .2s ease-in-out
+#c,
+#d,
+#e,
+#f,
+#g,
+#a,
+#b,
+#c2,
+#d2 {
+	transition: all 0.2s ease-in-out;
 }
 
-#c:hover, #d:hover, #e:hover, #f:hover, #g:hover, #a:hover, #b:hover, #c2:hover, #d2:hover
-{ 
-	transform: scale(1.2); 
+#c:hover,
+#d:hover,
+#e:hover,
+#f:hover,
+#g:hover,
+#a:hover,
+#b:hover,
+#c2:hover,
+#d2:hover {
+	transform: scale(1.2);
 }
 
-#c:active, #d:active, #e:active, #f:active, #g:active, #a:active, #b:active, #c2:active, #d2:active
-{
+#c:active,
+#d:active,
+#e:active,
+#f:active,
+#g:active,
+#a:active,
+#b:active,
+#c2:active,
+#d2:active {
 	transform: scale(0.9);
 }
-
-
