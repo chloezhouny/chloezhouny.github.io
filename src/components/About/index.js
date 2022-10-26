@@ -224,28 +224,34 @@ class About extends Component {
                 <div className="col-2">
                   <div>
                     <ul onMouseEnter={this.changeOpacity.bind(this)}>
-                      <li className={li_class} key="0">
-                        CSS
-                      </li>
-                      <li className={li_class} key="1">
+                    <li className={li_class} key="0">
                         HTML
                       </li>
+                      <li className={li_class} key="1">
+                        CSS
+                      </li>        
                       <li className={li_class} key="2">
-                        React
-                      </li>
-                      <li className={li_class} key="3">
                         JavaScript
                       </li>
-                      <li className={li_class} key="4">
+                      <li className={li_class} key="3">
                         JQuery
                       </li>
+                      <li className={li_class} key="4">
+                        TypeScript
+                      </li>
                       <li className={li_class} key="5">
+                        React
+                      </li>  
+                      <li className={li_class} key="6">
+                        GraphQL
+                      </li>           
+                      <li className={li_class} key="7">
                         Material UI
                       </li>
-                      <li className={li_class} key="6">
+                      <li className={li_class} key="8">
                         Ant Design
                       </li>
-                      <li className={li_class} key="7">
+                      <li className={li_class} key="9">
                         Three.js
                       </li>
                     </ul>
@@ -259,28 +265,31 @@ class About extends Component {
                     <li className={li_class2} key="1">
                       Express
                     </li>
-                    <li className={li_class2} key="2">
+                    <li className={li_class} key="2">
+                        GraphQL
+                      </li> 
+                    <li className={li_class2} key="3">
                       MySQL
                     </li>
-                    <li className={li_class2} key="3">
+                    <li className={li_class2} key="4">
                       Sequelize
                     </li>
-                    <li className={li_class2} key="4">
+                    <li className={li_class2} key="5">
                       Mongo
                     </li>
-                    <li className={li_class2} key="5">
+                    <li className={li_class2} key="6">
                       Firebase
                     </li>
-                    <li className={li_class2} key="6">
+                    <li className={li_class2} key="7">
                       Amazon Web Service
                     </li>
-                    <li className={li_class2} key="7">
+                    <li className={li_class2} key="8">
                       Git
                     </li>
-                    <li className={li_class2} key="8">
+                    <li className={li_class2} key="9">
                       NPM
                     </li>
-                    <li className={li_class2} key="9">
+                    <li className={li_class2} key="10">
                       Passport
                     </li>
                   </ul>
