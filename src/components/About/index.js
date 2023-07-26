@@ -149,6 +149,15 @@ class About extends Component {
       gray3: false,
     });
   };
+  changeOpacity4 = () => {
+    this.setState({
+      gray: true,
+      gray2: true,
+      gray3: true,
+      gray4: true,
+    });
+  };
+
 
   onClick = () => {
     this.setState({
@@ -201,13 +210,13 @@ class About extends Component {
                 <div className="col-2 skillContent">
                   <p onMouseEnter={this.changeOpacity.bind(this)}> Frontend </p>
                   <p className={count_class} id="count1">
-                    8
+                    10
                   </p>
                 </div>
                 <div className="col-2 skillContent">
                   <p onMouseEnter={this.changeOpacity2.bind(this)}> Backend </p>
                   <p className={count_class2} id="count2">
-                    10
+                    9
                   </p>
                 </div>
                 <div className="col-2 skillContent">
@@ -216,34 +225,33 @@ class About extends Component {
                     Tools & Languages{" "}
                   </p>
                   <p className={count_class3} id="count3">
-                    3
+                    9
                   </p>
                 </div>
               </div>
               <div className="row">
                 <div className="col-2">
-                  <div>
                     <ul onMouseEnter={this.changeOpacity.bind(this)}>
                     <li className={li_class} key="0">
-                        HTML
+                        React
                       </li>
                       <li className={li_class} key="1">
-                        CSS
+                        React Hooks
                       </li>        
                       <li className={li_class} key="2">
-                        JavaScript
+                        Redux Toolkit
                       </li>
                       <li className={li_class} key="3">
-                        JQuery
+                        Next.js
                       </li>
                       <li className={li_class} key="4">
-                        TypeScript
+                        Jquery
                       </li>
                       <li className={li_class} key="5">
-                        React
+                        WebSocket
                       </li>  
                       <li className={li_class} key="6">
-                        GraphQL
+                        Tailwind CSS
                       </li>           
                       <li className={li_class} key="7">
                         Material UI
@@ -255,59 +263,73 @@ class About extends Component {
                         Three.js
                       </li>
                     </ul>
-                  </div>
                 </div>
                 <div className="col-2">
                   <ul onMouseEnter={this.changeOpacity2.bind(this)}>
                     <li className={li_class2} key="0">
-                      <div>Node.js</div>
+                      <div>Express</div>
                     </li>
                     <li className={li_class2} key="1">
-                      Express
+                      RESTful APIs
                     </li>
-                    <li className={li_class} key="2">
-                        GraphQL
+                    <li className={li_class2} key="2">
+                      MySQL
                       </li> 
                     <li className={li_class2} key="3">
-                      MySQL
-                    </li>
-                    <li className={li_class2} key="4">
                       Sequelize
                     </li>
+                    <li className={li_class2} key="4">
+                      GraphQL
+                    </li>
                     <li className={li_class2} key="5">
-                      Mongo
+                      Graphbase
                     </li>
                     <li className={li_class2} key="6">
                       Firebase
                     </li>
                     <li className={li_class2} key="7">
-                      Amazon Web Service
+                      MongoDB
                     </li>
                     <li className={li_class2} key="8">
-                      Git
-                    </li>
-                    <li className={li_class2} key="9">
-                      NPM
-                    </li>
-                    <li className={li_class2} key="10">
-                      Passport
+                      AWS S3
                     </li>
                   </ul>
                 </div>
                 <div className="col-2">
                   <ul onMouseEnter={this.changeOpacity3.bind(this)}>
                     <li className={li_class3} key="0">
-                      C++
+                      Javascript ES6+
                     </li>
                     <li className={li_class3} key="1">
-                      Python
+                      TypeScript
                     </li>
                     <li className={li_class3} key="2">
+                      SQL
+                    </li>
+                    <li className={li_class3} key="3">
+                      HTML5
+                    </li>
+                    <li className={li_class3} key="4">
+                      CSS
+                    </li>
+                    <li className={li_class3} key="5">
+                      Node.js
+                    </li>
+                    <li className={li_class3} key="6">
+                      C++
+                    </li>
+                    <li className={li_class3} key="7">
+                      Python
+                    </li>
+                    <li className={li_class3} key="8">
                       Ruby/Rails
                     </li>
+                    <li className={li_class3} key="9">
+                      Git
+                    </li>
+
                   </ul>
                 </div>
-
                 <div className="col-2" id="svgwrapper">
                   <svg
                     version="1.1"
@@ -499,7 +521,7 @@ class About extends Component {
                 <h2>Passion </h2>
                 <p>
                   {" "}
-                  As a full-stack web developer with a background in finance,
+                As a full-stack web developer with a background in finance,
                   Chloe enjoys solving problems and presenting solutions that
                   incorporate new technologies. She has consistent record of
                   constructing and executing model view controller frameworks.
