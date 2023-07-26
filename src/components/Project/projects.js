@@ -116,7 +116,7 @@ var venvi = {
      var myNeflix = {
        title: "My Neflix",
       cover:
-        "https://images.unsplash.com/photo-1458053688450-eef5d21d43b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1773&q=80",
+        "https://images.unsplash.com/photo-1620145648299-f926ac0a9470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
       description: "Yelp for Movies",
       img: [myneflix1, myneflix2, myneflix3, myneflix4],
       tech: ["React", "Redux Toolkit", "Material UI", "TMDB API"],
