@@ -204,7 +204,7 @@ class ProjectCard extends Component {
               <div className="col-7 offset-1">
                 <p>{this.state.detail}</p>
                 <br></br>
-                <a href={this.state.link}>
+                <a target_blank href={this.state.link}>
                   <Icon type="link" /> See the project
                 </a>
                 <a id="code" href={this.state.code}>
