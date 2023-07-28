@@ -138,7 +138,7 @@ var venvi = {
       link: "https://my-dashboard2.netlify.app/",
       code: "https://github.com/chloezhouny/dashboard",
     }
-
+    
     var gymate = {
       title: "Gymate",
       cover:
