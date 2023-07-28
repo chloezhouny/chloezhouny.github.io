@@ -88,16 +88,16 @@ var venvi = {
     };
 
     var twittuer = {
-      title: "Twittuer",
+      title: "Chirpr",
       cover:
         "https://images.unsplash.com/photo-1603145733316-7462e5ecd80d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
       description: "Social Networking Site",
       img: [twittuer1],
       tech: ["React", "JSON-server", "Ant Design Mobile", "react-virtualized"],
       detail:
-        "Twittuer is a mobile web app that mocks Twitter. Users can post, comment, like, and share tweets, as well as follow other users. ",
-      link: "https://twittuer.netlify.app",
-      code: "https://github.com/chloezhouny/twittuer",
+        "Chirpr is a mobile web app that mocks Twitter. Users can post, comment, like, and share tweets, as well as follow other users. ",
+      link: "https://chirpr.netlify.app",
+      code: "https://github.com/chloezhouny/chirpr",
     };
 
     var pebbble = {
@@ -127,7 +127,7 @@ var venvi = {
     }
 
      var dashboard = {
-       title: "dashboard",
+       title: "DashVue",
       cover:
         "https://images.unsplash.com/photo-1532102235608-dc8fc689c9ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
       description: "Admin Dashboard",
